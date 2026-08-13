@@ -1,0 +1,21 @@
+{
+  "name": "afl-fantasy-football",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "sync:sheet": "node --env-file-if-exists=.env scripts/sync-google-sheet.mjs",
+    "sync:yahoo": "node --env-file-if-exists=.env scripts/sync-yahoo.mjs",
+    "sync:weekly": "npm run sync:sheet && npm run sync:yahoo",
+    "yahoo:auth": "node --env-file-if-exists=.env scripts/yahoo-auth-helper.mjs"
+  },
+  "dependencies": {
+    "@astrojs/check": "latest",
+    "astro": "latest",
+    "typescript": "latest"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,62 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import league from '../data/current.json';
+
+const formatMoney = (value: number) => `$${value.toLocaleString()}`;
+const firstName = (name: string) => name.split(/\s+/)[0];
+const baseUrl = import.meta.env.BASE_URL;
+---
+<BaseLayout title={`AFL Fantasy Football | ${league.season}`}>
+  <main class="shell">
+    <header class="masthead">
+      <a class="wordmark" href={baseUrl} aria-label="AFL Fantasy Football home">
+        <span class="mark">AFL</span>
+        <span>Fantasy<br /><b>Football</b></span>
+      </a>
+      <nav class="season-nav" aria-label="Season navigation"><a class="active" href={baseUrl}>2026 league</a><a href={`${baseUrl}archive/2025/`}>2025 results</a></nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">The weekly league room</p>
+        <h1>Where the<br /><em>numbers</em> talk.</h1>
+        <p class="lede">The current season, weekly standings, and the stories hiding between the box scores.</p>
+      </div>
+      <div class="hero-score">
+        <p class="eyebrow">Yahoo connection</p>
+        <strong class="sync-state">Pending</strong>
+        <span>Run the weekly Yahoo sync to load 2026 standings</span>
+        <div class="score-rule"><i></i></div>
+        <small>Updated {league.updatedAt}</small>
+      </div>
+    </section>
+
+    <section class="stats-grid" aria-label="League highlights">
+      <div class="stat"><span>League size</span><strong>{league.teams.length} <small>teams</small></strong></div>
+      <div class="stat"><span>Buy-in</span><strong>{formatMoney(league.buyIn)}</strong><small>per manager</small></div>
+      <div class="stat"><span>Transaction fee</span><strong>{formatMoney(league.transactionFee)}</strong><small>per move</small></div>
+      <div class="stat accent"><span>Previous champion</span><strong>The Replacements</strong><small>2025 results in the archive</small></div>
+    </section>
+
+    <div class="content-grid">
+      <section class="panel standings-panel">
+        <div class="panel-heading"><div><p class="eyebrow">Current season</p><h2>2026 League</h2></div><span class="season-label">{league.week}</span></div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Pos</th><th>Team</th><th>Manager</th><th>Status</th><th class="money">Points</th></tr></thead>
+            <tbody>
+              {league.teams.length ? league.teams.map((team) => <tr><td class="rank">{String(team.rank).padStart(2, '0')}</td><td class="team-name">{team.name}</td><td>{firstName(team.manager)}</td><td><span class="status">{team.record}</span></td><td class="money">{team.points}</td></tr>) : <tr><td colspan="5" class="empty-state">Yahoo standings will appear here after the first 2026 sync.</td></tr>}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <aside class="sidebar">
+        <section class="panel pulse-panel"><p class="eyebrow">League pulse</p><h2>Last season,<br /><em>settled.</em></h2><div class="bar-chart" aria-label="Payout distribution"><i style="height: 100%"></i><i style="height: 29%"></i><i style="height: 16%"></i><i style="height: 16%"></i><i style="height: 8%"></i></div><div class="chart-labels"><span>1st</span><span>2nd</span><span>3rd</span><span>4th</span><span>5th+</span></div></section>
+        <section class="panel awards-panel"><p class="eyebrow">The receipts</p>{league.awards.map((award) => <div class="award"><span>{award.label}</span><strong>{award.value}</strong><small>{award.detail}</small></div>)}</section>
+      </aside>
+    </div>
+
+    <footer><span>AFL FANTASY FOOTBALL <b>•</b> WEEKLY EDITION</span><span>Next update: after the next matchup week</span></footer>
+  </main>
+</BaseLayout>

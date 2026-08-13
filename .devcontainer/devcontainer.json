@@ -1,0 +1,17 @@
+{
+  "name": "AFL Fantasy Football",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-24-bookworm",
+  "forwardPorts": [4321],
+  "portsAttributes": {
+    "4321": { "label": "Astro", "onAutoForward": "openBrowser" }
+  },
+  "postCreateCommand": "npm install && mkdir -p \"$HOME/.local/bin\" && curl -L --fail --silent --show-error https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64 -o \"$HOME/.local/bin/cloudflared\" && chmod +x \"$HOME/.local/bin/cloudflared\"",
+  "customizations": {
+    "vscode": {
+      "extensions": ["astro-build.astro-vscode", "dbaeumer.vscode-eslint"],
+      "settings": {
+        "editor.formatOnSave": true
+      }
+    }
+  }
+}
