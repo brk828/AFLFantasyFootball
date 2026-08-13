@@ -85,10 +85,10 @@
       "record": "Out",
       "points": 0,
       "transactionCount": 7,
-      "winnings": 20,
+      "winnings": 40,
       "buyIn": 20,
       "transactionCost": 35,
-      "finalPayout": -35
+      "finalPayout": -15
     },
     {
       "rank": 8,
@@ -145,15 +145,16 @@
       "record": "Out",
       "points": 0,
       "transactionCount": 0,
-      "winnings": 20,
+      "winnings": 0,
       "buyIn": 20,
       "transactionCost": 0,
-      "finalPayout": 0
+      "finalPayout": -20
     }
   ],
   "awards": [
     { "label": "Pot Winner", "value": "The Replacements", "detail": "Chase – champion" },
     { "label": "Playoff Bonus", "value": "The Replacements, Jerry's Kids, The Foley Rollers, LockerRoom Loungers, Greek Phreaks, The Mighty C-Men", "detail": "Chase, Curtis, Ryan, Michelle, John, Brian – playoff qualifiers" },
+    { "label": "Toilet Bowl Winner", "value": "Bradland Rotties", "detail": "Brad – consolation bracket, $20" },
     { "label": "Best QB", "value": "The Mighty C-Men", "detail": "Brian" },
     { "label": "Best RB", "value": "Red Rockets", "detail": "Jason" },
     { "label": "Best Kicker", "value": "Bradland Rotties", "detail": "Brad" },
