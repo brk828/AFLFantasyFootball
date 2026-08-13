@@ -152,14 +152,14 @@
     }
   ],
   "awards": [
-    { "label": "Trade Pot – 1st", "value": "Jake Kelley", "detail": "80% of trade pot" },
-    { "label": "Trade Pot – 2nd", "value": "Curtis Callaway", "detail": "20% of trade pot" },
-    { "label": "Playoff Bonus", "value": "Jake Kelley, Curtis Callaway, Aaron Burgad, Chase Ehlo, Oliver Kesner, Ken Geise", "detail": "$20 each, top 6 finishers" },
-    { "label": "Toilet Bowl Winner", "value": "John Klissas", "detail": "$20" },
-    { "label": "Best QB", "value": "Oliver Kesner", "detail": "L. Jackson – $20" },
-    { "label": "Best RB", "value": "Ken Geise", "detail": "S. Barkley – $20" },
-    { "label": "Best WR", "value": "Oliver Kesner", "detail": "J. Chase – $20" },
-    { "label": "Best DEF", "value": "Curtis Callaway", "detail": "Denver – $20" },
-    { "label": "Best Kicker", "value": "John Klissas", "detail": "C. Boswell – $20" }
+    { "label": "Trade Pot – 1st", "value": "Dolphindore's Army", "detail": "Jake – 80% of trade pot" },
+    { "label": "Trade Pot – 2nd", "value": "Jerry's Kids", "detail": "Curtis – 20% of trade pot" },
+    { "label": "Playoff Bonus", "value": "Dolphindore's Army, Jerry's Kids, A-aron, The Replacements, Sharknado, Chicken Nipples", "detail": "Jake, Curtis, Aaron, Chase, Oliver, Ken – $20 each, top 6 finishers" },
+    { "label": "Toilet Bowl Winner", "value": "Greek Phreaks", "detail": "John – $20" },
+    { "label": "Best QB", "value": "Sharknado", "detail": "Oliver – L. Jackson – $20" },
+    { "label": "Best RB", "value": "Chicken Nipples", "detail": "Ken – S. Barkley – $20" },
+    { "label": "Best WR", "value": "Sharknado", "detail": "Oliver – J. Chase – $20" },
+    { "label": "Best DEF", "value": "Jerry's Kids", "detail": "Curtis – Denver – $20" },
+    { "label": "Best Kicker", "value": "Greek Phreaks", "detail": "John – C. Boswell – $20" }
   ]
 }

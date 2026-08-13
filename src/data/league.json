@@ -152,10 +152,12 @@
     }
   ],
   "awards": [
-    { "label": "Best QB", "value": "Brian Kesner", "detail": "The Mighty C-Men" },
-    { "label": "Best RB", "value": "Jason Riddle", "detail": "Red Rockets" },
-    { "label": "Best Kicker", "value": "Brad Grubenhoff", "detail": "Bradland Rotties" },
-    { "label": "Best WR", "value": "Chase Ehlo", "detail": "The Replacements" },
-    { "label": "Best DEF", "value": "Ryan Foley", "detail": "The Foley Rollers" }
+    { "label": "Pot Winner", "value": "The Replacements", "detail": "Chase – champion" },
+    { "label": "Playoff Bonus", "value": "The Replacements, Jerry's Kids, The Foley Rollers, LockerRoom Loungers, Greek Phreaks, The Mighty C-Men", "detail": "Chase, Curtis, Ryan, Michelle, John, Brian – playoff qualifiers" },
+    { "label": "Best QB", "value": "The Mighty C-Men", "detail": "Brian" },
+    { "label": "Best RB", "value": "Red Rockets", "detail": "Jason" },
+    { "label": "Best Kicker", "value": "Bradland Rotties", "detail": "Brad" },
+    { "label": "Best WR", "value": "The Replacements", "detail": "Chase" },
+    { "label": "Best DEF", "value": "The Foley Rollers", "detail": "Ryan" }
   ]
 }

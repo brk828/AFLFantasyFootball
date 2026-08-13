@@ -10,6 +10,7 @@ const lines = csv.trim().split(/\r?\n/).map((line) => line.split(/,(?=(?:[^"]*"[
 const headers = lines.shift().map((header) => header.replace(/\s+/g, ' '));
 const get = (row, name) => row[headers.findIndex((header) => header === name)] ?? '';
 const money = (value) => Number.parseFloat(value.replace(/[^\d.-]/g, '')) || 0;
+const firstName = (name) => name.split(/\s+/)[0];
 const positionNames = { QB: 'Best QB', RB: 'Best RB', WR: 'Best WR', DEF: 'Best DEF', K: 'Best Kicker' };
 const teamRows = lines.filter((row) => get(row, 'Team'));
 const teams = teamRows.map((row) => ({
@@ -24,9 +25,16 @@ const teams = teamRows.map((row) => ({
   transactionCost: money(get(row, 'TransactionCost')),
   finalPayout: money(get(row, 'Winnings')) - money(get(row, 'Buy in')) - money(get(row, 'TransactionCost'))
 })).sort((a, b) => a.rank - b.rank);
-const awards = teamRows.flatMap((row) => [get(row, 'Position Win'), get(row, 'Position Win2')]
+const positionAwards = teamRows.flatMap((row) => [get(row, 'Position Win'), get(row, 'Position Win2')]
   .filter((position) => positionNames[position])
-  .map((position) => ({ label: positionNames[position], value: get(row, 'Name'), detail: get(row, 'Team') })));
+  .map((position) => ({ label: positionNames[position], value: get(row, 'Team'), detail: firstName(get(row, 'Name')) })));
+const champion = teams.find((team) => team.rank === 1);
+const playoffTeams = teams.filter((team) => team.record === 'Playoff');
+const awards = [
+  ...(champion ? [{ label: 'Pot Winner', value: champion.name, detail: `${firstName(champion.manager)} – champion` }] : []),
+  { label: 'Playoff Bonus', value: playoffTeams.map((team) => team.name).join(', '), detail: `${playoffTeams.map((team) => firstName(team.manager)).join(', ')} – playoff qualifiers` },
+  ...positionAwards
+];
 const totalPot = teams.reduce((sum, team) => sum + team.winnings, 0);
 const completedSeason = new Date().getFullYear() - 1;
 const data = { season: completedSeason.toString(), week: 'Offseason', updatedAt: new Date().toISOString().slice(0, 10), buyIn: 20, transactionFee: 5, totalPot, teams, awards };
