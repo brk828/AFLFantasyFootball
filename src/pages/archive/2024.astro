@@ -1,16 +1,16 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import league from '../../data/league.json';
+import league from '../../data/league-2024.json';
 import logo from '../../media/Logo2026.png';
 
 const formatMoney = (value: number) => `${value < 0 ? '-' : ''}$${Math.abs(value).toLocaleString()}`;
 const firstName = (name: string) => name.split(/\s+/)[0];
 const baseUrl = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
 ---
-<BaseLayout title="AFL Fantasy Football | 2025 Results">
+<BaseLayout title="AFL Fantasy Football | 2024 Results">
   <main class="shell archive-shell">
     <header class="masthead">
-      <nav class="season-nav" aria-label="Season navigation"><a href={baseUrl}>2026 league</a><a class="active" href={`${baseUrl}archive/2025/`}>2025 results</a><a href={`${baseUrl}archive/2024/`}>2024 results</a></nav>
+      <nav class="season-nav" aria-label="Season navigation"><a href={baseUrl}>2026 league</a><a href={`${baseUrl}archive/2025/`}>2025 results</a><a class="active" href={`${baseUrl}archive/2024/`}>2024 results</a></nav>
     </header>
     <section class="archive-hero"><img class="archive-logo" src={logo.src} alt="AFL Fantasy Football League" /><p class="eyebrow">The archive</p><h1>Final Standings <em>{league.season}</em></h1><p class="lede">The settled table, payout receipts, and bragging rights.</p></section>
     <section class="panel standings-panel">
@@ -19,6 +19,10 @@ const baseUrl = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_UR
         {league.teams.map((team) => <tr class:list={{ champion: team.rank === 1 }}><td class="rank">{String(team.rank).padStart(2, '0')}</td><td class="team-name">{team.name}{team.rank === 1 && <span class="crown">★</span>}</td><td>{firstName(team.manager)}</td><td><span class:list={{ status: true, playoff: team.record === 'Playoff' }}>{team.record}</span></td><td class="money">{formatMoney(team.winnings)}</td><td class="money cost">-{formatMoney(team.buyIn)}</td><td class="money cost">-{formatMoney(team.transactionCost)} <small>({team.transactionCount})</small></td><td class="money final-payout">{formatMoney(team.finalPayout)}</td></tr>)}
       </tbody></table></div>
     </section>
-    <footer><span>AFL FANTASY FOOTBALL <b>•</b> 2025 ARCHIVE</span><span><a href={baseUrl}>Back to 2026 league</a></span></footer>
+    <section class="panel awards-panel">
+      <div class="panel-heading"><div><p class="eyebrow">Playoff winnings &amp; best player awards</p><h2>The receipts</h2></div></div>
+      {league.awards.map((award) => <div class="award"><span>{award.label}</span><strong>{award.value}</strong><small>{award.detail}</small></div>)}
+    </section>
+    <footer><span>AFL FANTASY FOOTBALL <b>•</b> 2024 ARCHIVE</span><span><a href={baseUrl}>Back to 2026 league</a></span></footer>
   </main>
 </BaseLayout>
