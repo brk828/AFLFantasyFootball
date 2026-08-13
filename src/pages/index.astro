@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import league from '../data/current.json';
+import logo from '../media/Logo2026.png';
 
 const formatMoney = (value: number) => `$${value.toLocaleString()}`;
 const firstName = (name: string) => name.split(/\s+/)[0];
@@ -9,18 +10,17 @@ const baseUrl = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_UR
 <BaseLayout title={`AFL Fantasy Football | ${league.season}`}>
   <main class="shell">
     <header class="masthead">
-      <a class="wordmark" href={baseUrl} aria-label="AFL Fantasy Football home">
-        <span class="mark">AFL</span>
-        <span>Fantasy<br /><b>Football</b></span>
-      </a>
       <nav class="season-nav" aria-label="Season navigation"><a class="active" href={baseUrl}>2026 league</a><a href={`${baseUrl}archive/2025/`}>2025 results</a></nav>
     </header>
 
     <section class="hero">
-      <div class="hero-copy">
+      <div class="hero-intro">
+        <div class="hero-copy">
         <p class="eyebrow">The weekly league room</p>
         <h1>Where the<br /><em>numbers</em> talk.</h1>
-        <p class="lede">The current season, weekly standings, and the stories hiding between the box scores.</p>
+        <p class="lede">The current season, weekly standings, and bragging rights.</p>
+        </div>
+        <div class="hero-logo-wrap"><img class="hero-logo" src={logo.src} alt="AFL Fantasy Football League" /></div>
       </div>
       <div class="hero-score">
         <p class="eyebrow">Yahoo connection</p>

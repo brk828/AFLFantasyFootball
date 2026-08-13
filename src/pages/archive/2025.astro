@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import league from '../../data/league.json';
+import logo from '../../media/Logo2026.png';
 
 const formatMoney = (value: number) => `${value < 0 ? '-' : ''}$${Math.abs(value).toLocaleString()}`;
 const firstName = (name: string) => name.split(/\s+/)[0];
@@ -9,10 +10,9 @@ const baseUrl = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_UR
 <BaseLayout title="AFL Fantasy Football | 2025 Results">
   <main class="shell archive-shell">
     <header class="masthead">
-      <a class="wordmark" href={baseUrl} aria-label="AFL Fantasy Football home"><span class="mark">AFL</span><span>Fantasy<br /><b>Football</b></span></a>
       <nav class="season-nav" aria-label="Season navigation"><a href={baseUrl}>2026 league</a><a class="active" href={`${baseUrl}archive/2025/`}>2025 results</a></nav>
     </header>
-    <section class="archive-hero"><p class="eyebrow">The archive</p><h1>Final Standings <em>{league.season}</em></h1><p class="lede">The settled table, payout receipts, and the season that started it all.</p></section>
+    <section class="archive-hero"><img class="archive-logo" src={logo.src} alt="AFL Fantasy Football League" /><p class="eyebrow">The archive</p><h1>Final Standings <em>{league.season}</em></h1><p class="lede">The settled table, payout receipts, and bragging rights.</p></section>
     <section class="panel standings-panel">
       <div class="panel-heading"><div><p class="eyebrow">Previous season</p><h2>Final Standings {league.season}</h2></div><span class="season-label">{league.updatedAt}</span></div>
       <div class="table-wrap"><table><thead><tr><th>Pos</th><th>Team</th><th>Manager</th><th>Status</th><th class="money">Winnings</th><th class="money">Buy-in</th><th class="money">Transaction cost</th><th class="money">Final payout</th></tr></thead><tbody>
