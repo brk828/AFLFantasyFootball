@@ -10,7 +10,9 @@ const lines = csv.trim().split(/\r?\n/).map((line) => line.split(/,(?=(?:[^"]*"[
 const headers = lines.shift().map((header) => header.replace(/\s+/g, ' '));
 const get = (row, name) => row[headers.findIndex((header) => header === name)] ?? '';
 const money = (value) => Number.parseFloat(value.replace(/[^\d.-]/g, '')) || 0;
-const teams = lines.filter((row) => get(row, 'Team')).map((row) => ({
+const positionNames = { QB: 'Best QB', RB: 'Best RB', WR: 'Best WR', DEF: 'Best DEF', K: 'Best Kicker' };
+const teamRows = lines.filter((row) => get(row, 'Team'));
+const teams = teamRows.map((row) => ({
   rank: Number.parseInt(get(row, 'Final Standing'), 10),
   name: get(row, 'Team'),
   manager: get(row, 'Name'),
@@ -22,8 +24,11 @@ const teams = lines.filter((row) => get(row, 'Team')).map((row) => ({
   transactionCost: money(get(row, 'TransactionCost')),
   finalPayout: money(get(row, 'Winnings')) - money(get(row, 'Buy in')) - money(get(row, 'TransactionCost'))
 })).sort((a, b) => a.rank - b.rank);
+const awards = teamRows.flatMap((row) => [get(row, 'Position Win'), get(row, 'Position Win2')]
+  .filter((position) => positionNames[position])
+  .map((position) => ({ label: positionNames[position], value: get(row, 'Name'), detail: get(row, 'Team') })));
 const totalPot = teams.reduce((sum, team) => sum + team.winnings, 0);
 const completedSeason = new Date().getFullYear() - 1;
-const data = { season: completedSeason.toString(), week: 'Offseason', updatedAt: new Date().toISOString().slice(0, 10), buyIn: 20, transactionFee: 5, totalPot, teams, awards: [] };
+const data = { season: completedSeason.toString(), week: 'Offseason', updatedAt: new Date().toISOString().slice(0, 10), buyIn: 20, transactionFee: 5, totalPot, teams, awards };
 await writeFile('src/data/league.json', `${JSON.stringify(data, null, 2)}\n`);
 console.log(`Imported ${teams.length} teams and ${totalPot} in winnings.`);

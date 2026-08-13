@@ -19,6 +19,10 @@ const baseUrl = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_UR
         {league.teams.map((team) => <tr class:list={{ champion: team.rank === 1 }}><td class="rank">{String(team.rank).padStart(2, '0')}</td><td class="team-name">{team.name}{team.rank === 1 && <span class="crown">★</span>}</td><td>{firstName(team.manager)}</td><td><span class:list={{ status: true, playoff: team.record === 'Playoff' }}>{team.record}</span></td><td class="money">{formatMoney(team.winnings)}</td><td class="money cost">-{formatMoney(team.buyIn)}</td><td class="money cost">-{formatMoney(team.transactionCost)} <small>({team.transactionCount})</small></td><td class="money final-payout">{formatMoney(team.finalPayout)}</td></tr>)}
       </tbody></table></div>
     </section>
+    <section class="panel awards-panel">
+      <div class="panel-heading"><div><p class="eyebrow">Best player awards</p><h2>The receipts</h2></div></div>
+      {league.awards.map((award) => <div class="award"><span>{award.label}</span><strong>{award.value}</strong><small>{award.detail}</small></div>)}
+    </section>
     <footer><span>AFL FANTASY FOOTBALL <b>•</b> 2025 ARCHIVE</span><span><a href={baseUrl}>Back to 2026 league</a></span></footer>
   </main>
 </BaseLayout>

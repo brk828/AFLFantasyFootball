@@ -151,5 +151,11 @@
       "finalPayout": 0
     }
   ],
-  "awards": []
+  "awards": [
+    { "label": "Best QB", "value": "Brian Kesner", "detail": "The Mighty C-Men" },
+    { "label": "Best RB", "value": "Jason Riddle", "detail": "Red Rockets" },
+    { "label": "Best Kicker", "value": "Brad Grubenhoff", "detail": "Bradland Rotties" },
+    { "label": "Best WR", "value": "Chase Ehlo", "detail": "The Replacements" },
+    { "label": "Best DEF", "value": "Ryan Foley", "detail": "The Foley Rollers" }
+  ]
 }
