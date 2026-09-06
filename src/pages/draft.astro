@@ -1,0 +1,264 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import players from '../data/draftkit-2026.json';
+
+const baseUrl = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+const positions = ['ALL', 'QB', 'RB', 'WR', 'TE', 'K', 'DEF'];
+---
+<BaseLayout title="AFL Fantasy Football | 2026 Draft Kit">
+  <main class="shell draft-shell">
+    <header class="masthead">
+      <nav class="season-nav" aria-label="Season navigation">
+        <a href={baseUrl}>2026 league</a>
+        <a class="active" href={`${baseUrl}draft/`}>Draft kit</a>
+        <a href={`${baseUrl}archive/2025/`}>2025 results</a>
+        <a href={`${baseUrl}archive/2024/`}>2024 results</a>
+      </nav>
+    </header>
+
+    <section class="draft-hero">
+      <p class="eyebrow">2026 draft</p>
+      <h1>Draft <em>kit.</em></h1>
+      <p class="lede">Ranks players by projected points, then boosts anyone who has fallen well past their ADP so a steal never slips by.</p>
+    </section>
+
+    <section class="draft-controls panel">
+      <div class="control-group">
+        <label for="pick-input">Current overall pick</label>
+        <div class="pick-stepper">
+          <button type="button" id="pick-down" aria-label="Previous pick">&minus;</button>
+          <input id="pick-input" type="number" min="1" value="1" />
+          <button type="button" id="pick-up" aria-label="Next pick">&plus;</button>
+        </div>
+      </div>
+      <div class="control-group">
+        <label for="steal-weight">Steal sensitivity</label>
+        <input id="steal-weight" type="range" min="0" max="3" step="0.25" value="1.25" />
+        <span id="steal-weight-value">1.25</span>
+      </div>
+      <div class="control-group search-group">
+        <label for="search">Search</label>
+        <input id="search" type="search" placeholder="Player, team..." autocomplete="off" />
+      </div>
+      <div class="control-group">
+        <label>
+          <input id="hide-drafted" type="checkbox" />
+          Hide drafted
+        </label>
+      </div>
+      <button type="button" id="reset-draft" class="reset-btn">Reset draft</button>
+    </section>
+
+    <div class="pos-tabs" id="pos-tabs">
+      {positions.map((pos) => <button type="button" class:list={{ active: pos === 'ALL' }} data-pos={pos}>{pos}</button>)}
+    </div>
+
+    <section class="panel board-panel">
+      <div class="table-wrap">
+        <table id="board-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Tier</th>
+              <th>Player</th>
+              <th>Pos</th>
+              <th>Team</th>
+              <th class="money">ADP</th>
+              <th class="money">Proj Pts</th>
+              <th class="money">Value</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="board-body"></tbody>
+        </table>
+        <p id="empty-state" class="empty-state" hidden>No players match your filters.</p>
+      </div>
+    </section>
+
+    <footer><span>AFL FANTASY FOOTBALL <b>&bull;</b> DRAFT KIT</span><span>Value = Proj Pts + (Pick &minus; ADP) &times; steal weight</span></footer>
+  </main>
+</BaseLayout>
+
+<script define:vars={{ players }}>
+  const STORAGE_KEY = 'draftkit-2026-state';
+
+  const state = {
+    pick: 1,
+    stealWeight: 1.25,
+    search: '',
+    position: 'ALL',
+    hideDrafted: false,
+    drafted: {}, // name -> pick number drafted at
+  };
+
+  try {
+    const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || 'null');
+    if (saved) Object.assign(state, saved);
+  } catch (err) {
+    // ignore corrupt storage
+  }
+
+  const pickInput = document.getElementById('pick-input');
+  const pickDown = document.getElementById('pick-down');
+  const pickUp = document.getElementById('pick-up');
+  const stealWeightInput = document.getElementById('steal-weight');
+  const stealWeightValue = document.getElementById('steal-weight-value');
+  const searchInput = document.getElementById('search');
+  const hideDraftedInput = document.getElementById('hide-drafted');
+  const resetBtn = document.getElementById('reset-draft');
+  const posTabs = document.getElementById('pos-tabs');
+  const boardBody = document.getElementById('board-body');
+  const emptyState = document.getElementById('empty-state');
+
+  function persist() {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+  }
+
+  function playerKey(p) {
+    return `${p.name}|${p.team}|${p.position}`;
+  }
+
+  function valueScore(p) {
+    const adp = p.adp ?? state.pick + 200; // undated ADP: treat as far off, no steal bonus
+    const fall = Math.max(0, state.pick - adp);
+    return p.projPts + fall * state.stealWeight;
+  }
+
+  function render() {
+    const search = state.search.trim().toLowerCase();
+    const rows = players
+      .filter((p) => !state.hideDrafted || !state.drafted[playerKey(p)])
+      .filter((p) => state.position === 'ALL' || p.position === state.position)
+      .filter((p) => !search || p.name.toLowerCase().includes(search) || p.team.toLowerCase().includes(search))
+      .map((p) => ({ ...p, score: valueScore(p) }))
+      .sort((a, b) => b.score - a.score);
+
+    boardBody.innerHTML = '';
+    emptyState.hidden = rows.length > 0;
+
+    rows.forEach((p, index) => {
+      const key = playerKey(p);
+      const draftedAt = state.drafted[key];
+      const tr = document.createElement('tr');
+      if (draftedAt) tr.classList.add('drafted');
+
+      const fall = p.adp != null ? Math.max(0, state.pick - p.adp) : 0;
+
+      tr.innerHTML = `
+        <td class="rank">${String(index + 1).padStart(2, '0')}</td>
+        <td class="tier">T${p.tier}</td>
+        <td class="team-name">${p.name}</td>
+        <td>${p.position}</td>
+        <td>${p.team}</td>
+        <td class="money">${p.adp != null ? p.adp.toFixed(1) : '-'}</td>
+        <td class="money">${p.projPts.toFixed(1)}</td>
+        <td class="money value-cell">${p.score.toFixed(1)}${fall > 3 ? ' <span class="steal-tag">STEAL</span>' : ''}</td>
+        <td class="draft-cell"></td>
+      `;
+
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'draft-btn';
+      btn.textContent = draftedAt ? `Undo (#${draftedAt})` : 'Draft';
+      btn.addEventListener('click', () => {
+        if (draftedAt) {
+          delete state.drafted[key];
+        } else {
+          state.drafted[key] = state.pick;
+          state.pick += 1;
+          pickInput.value = String(state.pick);
+        }
+        persist();
+        render();
+      });
+      tr.querySelector('.draft-cell').appendChild(btn);
+
+      boardBody.appendChild(tr);
+    });
+  }
+
+  pickInput.value = String(state.pick);
+  stealWeightInput.value = String(state.stealWeight);
+  stealWeightValue.textContent = state.stealWeight.toFixed(2);
+  hideDraftedInput.checked = state.hideDrafted;
+
+  pickInput.addEventListener('change', () => {
+    state.pick = Math.max(1, parseInt(pickInput.value, 10) || 1);
+    pickInput.value = String(state.pick);
+    persist();
+    render();
+  });
+  pickDown.addEventListener('click', () => {
+    state.pick = Math.max(1, state.pick - 1);
+    pickInput.value = String(state.pick);
+    persist();
+    render();
+  });
+  pickUp.addEventListener('click', () => {
+    state.pick += 1;
+    pickInput.value = String(state.pick);
+    persist();
+    render();
+  });
+  stealWeightInput.addEventListener('input', () => {
+    state.stealWeight = parseFloat(stealWeightInput.value);
+    stealWeightValue.textContent = state.stealWeight.toFixed(2);
+    persist();
+    render();
+  });
+  searchInput.addEventListener('input', () => {
+    state.search = searchInput.value;
+    render();
+  });
+  hideDraftedInput.addEventListener('change', () => {
+    state.hideDrafted = hideDraftedInput.checked;
+    persist();
+    render();
+  });
+  posTabs.addEventListener('click', (event) => {
+    const btn = event.target.closest('button[data-pos]');
+    if (!btn) return;
+    state.position = btn.dataset.pos;
+    persist();
+    [...posTabs.children].forEach((child) => child.classList.toggle('active', child === btn));
+    render();
+  });
+  resetBtn.addEventListener('click', () => {
+    if (!confirm('Reset the draft board? This clears all drafted players and pick number.')) return;
+    state.pick = 1;
+    state.drafted = {};
+    pickInput.value = '1';
+    persist();
+    render();
+  });
+
+  render();
+</script>
+
+<style>
+  .draft-hero { padding: 60px 0 30px; border-bottom: 1px solid var(--line); }
+  .draft-hero h1 { font-size: clamp(46px, 7vw, 84px); letter-spacing: -0.06em; line-height: 0.9; margin-bottom: 14px; }
+  .draft-hero .lede { max-width: 520px; }
+  .draft-controls { display: flex; flex-wrap: wrap; align-items: end; gap: 26px; padding: 22px 25px; margin-top: 30px; }
+  .control-group { display: flex; flex-direction: column; gap: 6px; font: 11px 'DM Mono', monospace; text-transform: uppercase; color: var(--muted); }
+  .control-group label { display: flex; align-items: center; gap: 8px; }
+  .search-group { flex: 1; min-width: 180px; }
+  .pick-stepper { display: flex; align-items: center; gap: 6px; }
+  .pick-stepper button { width: 30px; height: 30px; border: 1px solid var(--line); background: var(--paper); cursor: pointer; font-size: 16px; }
+  #pick-input { width: 70px; padding: 6px; border: 1px solid var(--line); background: var(--paper); font: inherit; }
+  #search { padding: 7px 10px; border: 1px solid var(--line); background: var(--paper); font: 13px 'Space Grotesk', sans-serif; width: 100%; }
+  #steal-weight { width: 140px; }
+  .reset-btn { margin-left: auto; padding: 10px 16px; border: 1px solid var(--orange); color: var(--orange); background: transparent; font: 11px 'DM Mono', monospace; text-transform: uppercase; cursor: pointer; align-self: center; }
+  .reset-btn:hover { background: var(--orange); color: var(--paper); }
+  .pos-tabs { display: flex; gap: 8px; margin-top: 20px; flex-wrap: wrap; }
+  .pos-tabs button { padding: 8px 16px; border: 1px solid var(--line); background: var(--paper); color: var(--muted); font: 11px 'DM Mono', monospace; text-transform: uppercase; cursor: pointer; }
+  .pos-tabs button.active { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  .board-panel { margin-top: 20px; }
+  .tier { color: var(--muted); font: 10px 'DM Mono', monospace; }
+  .value-cell { font-weight: 600; }
+  .steal-tag { color: var(--orange); font: 10px 'DM Mono', monospace; border: 1px solid var(--orange); padding: 2px 5px; margin-left: 6px; }
+  .drafted { opacity: 0.4; }
+  .draft-btn { padding: 6px 14px; border: 1px solid var(--line); background: var(--paper); font: 10px 'DM Mono', monospace; text-transform: uppercase; cursor: pointer; }
+  .draft-btn:hover { background: var(--ink); color: var(--paper); }
+  .drafted .draft-btn { border-color: var(--orange); color: var(--orange); }
+</style>

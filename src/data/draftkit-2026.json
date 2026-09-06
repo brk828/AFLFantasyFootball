@@ -1,0 +1,2432 @@
+[
+  {
+    "name": "J. Gibbs",
+    "position": "RB",
+    "team": "Det",
+    "xrank": 1,
+    "adp": 1.2,
+    "projPts": 286.56,
+    "tier": 1
+  },
+  {
+    "name": "B. Robinson",
+    "position": "RB",
+    "team": "Atl",
+    "xrank": 2,
+    "adp": 2.2,
+    "projPts": 277.62,
+    "tier": 1
+  },
+  {
+    "name": "J. Chase",
+    "position": "WR",
+    "team": "Cin",
+    "xrank": 3,
+    "adp": 3.7,
+    "projPts": 211.52,
+    "tier": 1
+  },
+  {
+    "name": "P. Nacua",
+    "position": "WR",
+    "team": "LAR",
+    "xrank": 4,
+    "adp": 5.6,
+    "projPts": 203.64,
+    "tier": 2
+  },
+  {
+    "name": "J. Taylor",
+    "position": "RB",
+    "team": "Ind",
+    "xrank": 5,
+    "adp": 5,
+    "projPts": 253.96,
+    "tier": 2
+  },
+  {
+    "name": "C. McCaffrey",
+    "position": "RB",
+    "team": "SF",
+    "xrank": 6,
+    "adp": 6.3,
+    "projPts": 235.65,
+    "tier": 2
+  },
+  {
+    "name": "A. St. Brown",
+    "position": "WR",
+    "team": "Det",
+    "xrank": 7,
+    "adp": 7.9,
+    "projPts": 198.32,
+    "tier": 2
+  },
+  {
+    "name": "J. Smith-Njigba",
+    "position": "WR",
+    "team": "Sea",
+    "xrank": 8,
+    "adp": 7.9,
+    "projPts": 207.31,
+    "tier": 2
+  },
+  {
+    "name": "J. Cook III",
+    "position": "RB",
+    "team": "Buf",
+    "xrank": 9,
+    "adp": 8.8,
+    "projPts": 225.14,
+    "tier": 2
+  },
+  {
+    "name": "S. Barkley",
+    "position": "RB",
+    "team": "Phi",
+    "xrank": 10,
+    "adp": 10.3,
+    "projPts": 203.27,
+    "tier": 3
+  },
+  {
+    "name": "K. Walker III",
+    "position": "RB",
+    "team": "KC",
+    "xrank": 11,
+    "adp": 13.4,
+    "projPts": 198.8,
+    "tier": 3
+  },
+  {
+    "name": "C. Lamb",
+    "position": "WR",
+    "team": "Dal",
+    "xrank": 12,
+    "adp": 12.2,
+    "projPts": 180.11,
+    "tier": 3
+  },
+  {
+    "name": "J. Jefferson",
+    "position": "WR",
+    "team": "Min",
+    "xrank": 13,
+    "adp": 13.9,
+    "projPts": 176.9,
+    "tier": 3
+  },
+  {
+    "name": "C. Brown",
+    "position": "RB",
+    "team": "Cin",
+    "xrank": 14,
+    "adp": 14.2,
+    "projPts": 200.27,
+    "tier": 3
+  },
+  {
+    "name": "D. Henry",
+    "position": "RB",
+    "team": "Bal",
+    "xrank": 15,
+    "adp": 15.8,
+    "projPts": 220.5,
+    "tier": 3
+  },
+  {
+    "name": "O. Hampton",
+    "position": "RB",
+    "team": "LAC",
+    "xrank": 16,
+    "adp": 17.1,
+    "projPts": 188.49,
+    "tier": 3
+  },
+  {
+    "name": "D. Achane",
+    "position": "RB",
+    "team": "Mia",
+    "xrank": 17,
+    "adp": 14.8,
+    "projPts": 224,
+    "tier": 4
+  },
+  {
+    "name": "N. Collins",
+    "position": "WR",
+    "team": "Hou",
+    "xrank": 18,
+    "adp": 20.2,
+    "projPts": 176.2,
+    "tier": 4
+  },
+  {
+    "name": "B. Bowers",
+    "position": "TE",
+    "team": "LV",
+    "xrank": 19,
+    "adp": 20.5,
+    "projPts": 134.54,
+    "tier": 4
+  },
+  {
+    "name": "D. London",
+    "position": "WR",
+    "team": "Atl",
+    "xrank": 20,
+    "adp": 21.9,
+    "projPts": 174.93,
+    "tier": 4
+  },
+  {
+    "name": "A. Jeanty",
+    "position": "RB",
+    "team": "LV",
+    "xrank": 21,
+    "adp": 21.8,
+    "projPts": 176.82,
+    "tier": 4
+  },
+  {
+    "name": "G. Pickens",
+    "position": "WR",
+    "team": "Dal",
+    "xrank": 22,
+    "adp": 23.1,
+    "projPts": 174.84,
+    "tier": 4
+  },
+  {
+    "name": "A. Brown",
+    "position": "WR",
+    "team": "NE",
+    "xrank": 23,
+    "adp": 23,
+    "projPts": 160.11,
+    "tier": 4
+  },
+  {
+    "name": "C. Olave",
+    "position": "WR",
+    "team": "NO",
+    "xrank": 24,
+    "adp": 28.4,
+    "projPts": 148.17,
+    "tier": 4
+  },
+  {
+    "name": "M. Nabers",
+    "position": "WR",
+    "team": "NYG",
+    "xrank": 25,
+    "adp": 28.1,
+    "projPts": 140.39,
+    "tier": 4
+  },
+  {
+    "name": "D. Smith",
+    "position": "WR",
+    "team": "Phi",
+    "xrank": 26,
+    "adp": 29.5,
+    "projPts": 147.52,
+    "tier": 4
+  },
+  {
+    "name": "K. Williams",
+    "position": "RB",
+    "team": "LAR",
+    "xrank": 27,
+    "adp": 26.2,
+    "projPts": 190.49,
+    "tier": 4
+  },
+  {
+    "name": "J. Love",
+    "position": "RB",
+    "team": "Ari",
+    "xrank": 28,
+    "adp": 30.1,
+    "projPts": 184.3,
+    "tier": 5
+  },
+  {
+    "name": "J. Williams",
+    "position": "RB",
+    "team": "Dal",
+    "xrank": 29,
+    "adp": 30.3,
+    "projPts": 203.37,
+    "tier": 5
+  },
+  {
+    "name": "B. Hall",
+    "position": "RB",
+    "team": "NYJ",
+    "xrank": 30,
+    "adp": 32.9,
+    "projPts": 189.57,
+    "tier": 5
+  },
+  {
+    "name": "T. Higgins",
+    "position": "WR",
+    "team": "Cin",
+    "xrank": 31,
+    "adp": 34.6,
+    "projPts": 150.35,
+    "tier": 5
+  },
+  {
+    "name": "Z. Flowers",
+    "position": "WR",
+    "team": "Bal",
+    "xrank": 32,
+    "adp": 34.9,
+    "projPts": 165.85,
+    "tier": 5
+  },
+  {
+    "name": "J. Waddle",
+    "position": "WR",
+    "team": "Den",
+    "xrank": 33,
+    "adp": 37.3,
+    "projPts": 145.49,
+    "tier": 5
+  },
+  {
+    "name": "T. McBride",
+    "position": "TE",
+    "team": "Ari",
+    "xrank": 34,
+    "adp": 29.4,
+    "projPts": 139.71,
+    "tier": 5
+  },
+  {
+    "name": "J. Allen",
+    "position": "QB",
+    "team": "Buf",
+    "xrank": 35,
+    "adp": 24.6,
+    "projPts": 333.73,
+    "tier": 5
+  },
+  {
+    "name": "G. Wilson",
+    "position": "WR",
+    "team": "NYJ",
+    "xrank": 36,
+    "adp": 45.1,
+    "projPts": 120.47,
+    "tier": 5
+  },
+  {
+    "name": "T. McMillan",
+    "position": "WR",
+    "team": "Car",
+    "xrank": 37,
+    "adp": 42.6,
+    "projPts": 143.83,
+    "tier": 5
+  },
+  {
+    "name": "C. Loveland",
+    "position": "TE",
+    "team": "Chi",
+    "xrank": 38,
+    "adp": 38.1,
+    "projPts": 126.5,
+    "tier": 5
+  },
+  {
+    "name": "R. Rice",
+    "position": "WR",
+    "team": "KC",
+    "xrank": 39,
+    "adp": 37.8,
+    "projPts": 151.18,
+    "tier": 5
+  },
+  {
+    "name": "T. Etienne Jr.",
+    "position": "RB",
+    "team": "NO",
+    "xrank": 40,
+    "adp": 39.3,
+    "projPts": 176.23,
+    "tier": 5
+  },
+  {
+    "name": "L. McConkey",
+    "position": "WR",
+    "team": "LAC",
+    "xrank": 41,
+    "adp": 44,
+    "projPts": 129.06,
+    "tier": 6
+  },
+  {
+    "name": "D. Swift",
+    "position": "RB",
+    "team": "Chi",
+    "xrank": 42,
+    "adp": 42.6,
+    "projPts": 163.7,
+    "tier": 6
+  },
+  {
+    "name": "E. Egbuka",
+    "position": "WR",
+    "team": "TB",
+    "xrank": 43,
+    "adp": 48.7,
+    "projPts": 128.27,
+    "tier": 6
+  },
+  {
+    "name": "L. Burden III",
+    "position": "WR",
+    "team": "Chi",
+    "xrank": 44,
+    "adp": 55.8,
+    "projPts": 135.72,
+    "tier": 6
+  },
+  {
+    "name": "D. Moore",
+    "position": "WR",
+    "team": "Buf",
+    "xrank": 45,
+    "adp": 54.5,
+    "projPts": 124.37,
+    "tier": 6
+  },
+  {
+    "name": "T. Warren",
+    "position": "TE",
+    "team": "Ind",
+    "xrank": 46,
+    "adp": 46.1,
+    "projPts": 128.01,
+    "tier": 6
+  },
+  {
+    "name": "T. McLaurin",
+    "position": "WR",
+    "team": "Was",
+    "xrank": 47,
+    "adp": 55,
+    "projPts": 136.25,
+    "tier": 6
+  },
+  {
+    "name": "C. Skattebo",
+    "position": "RB",
+    "team": "NYG",
+    "xrank": 48,
+    "adp": 42.9,
+    "projPts": 177.66,
+    "tier": 6
+  },
+  {
+    "name": "J. Williams",
+    "position": "WR",
+    "team": "Det",
+    "xrank": 49,
+    "adp": 63.3,
+    "projPts": 128.73,
+    "tier": 6
+  },
+  {
+    "name": "B. Irving",
+    "position": "RB",
+    "team": "TB",
+    "xrank": 50,
+    "adp": 50.4,
+    "projPts": 164.25,
+    "tier": 6
+  },
+  {
+    "name": "R. Odunze",
+    "position": "WR",
+    "team": "Chi",
+    "xrank": 51,
+    "adp": 64.7,
+    "projPts": 127.16,
+    "tier": 6
+  },
+  {
+    "name": "C. Watson",
+    "position": "WR",
+    "team": "GB",
+    "xrank": 52,
+    "adp": 65.4,
+    "projPts": 137.5,
+    "tier": 6
+  },
+  {
+    "name": "L. Jackson",
+    "position": "QB",
+    "team": "Bal",
+    "xrank": 53,
+    "adp": 41.8,
+    "projPts": 308.41,
+    "tier": 6
+  },
+  {
+    "name": "P. Washington",
+    "position": "WR",
+    "team": "Jax",
+    "xrank": 54,
+    "adp": 68,
+    "projPts": 133.52,
+    "tier": 6
+  },
+  {
+    "name": "D. Adams",
+    "position": "WR",
+    "team": "LAR",
+    "xrank": 55,
+    "adp": 60.3,
+    "projPts": 134.29,
+    "tier": 6
+  },
+  {
+    "name": "Q. Judkins",
+    "position": "RB",
+    "team": "Cle",
+    "xrank": 56,
+    "adp": 56,
+    "projPts": 166.84,
+    "tier": 7
+  },
+  {
+    "name": "D. Montgomery",
+    "position": "RB",
+    "team": "Hou",
+    "xrank": 57,
+    "adp": 53.5,
+    "projPts": 174.34,
+    "tier": 7
+  },
+  {
+    "name": "B. Tuten",
+    "position": "RB",
+    "team": "Jax",
+    "xrank": 58,
+    "adp": 59,
+    "projPts": 144.76,
+    "tier": 7
+  },
+  {
+    "name": "J. Price",
+    "position": "RB",
+    "team": "Sea",
+    "xrank": 59,
+    "adp": 59.4,
+    "projPts": 167.92,
+    "tier": 7
+  },
+  {
+    "name": "M. Evans",
+    "position": "WR",
+    "team": "SF",
+    "xrank": 60,
+    "adp": 71.8,
+    "projPts": 117.34,
+    "tier": 7
+  },
+  {
+    "name": "D. Maye",
+    "position": "QB",
+    "team": "NE",
+    "xrank": 61,
+    "adp": 49.2,
+    "projPts": 305.19,
+    "tier": 7
+  },
+  {
+    "name": "R. Stevenson",
+    "position": "RB",
+    "team": "NE",
+    "xrank": 62,
+    "adp": 70.6,
+    "projPts": 143.31,
+    "tier": 7
+  },
+  {
+    "name": "J. Hurts",
+    "position": "QB",
+    "team": "Phi",
+    "xrank": 63,
+    "adp": 57.1,
+    "projPts": 307.04,
+    "tier": 7
+  },
+  {
+    "name": "J. Burrow",
+    "position": "QB",
+    "team": "Cin",
+    "xrank": 64,
+    "adp": 52.7,
+    "projPts": 296.11,
+    "tier": 7
+  },
+  {
+    "name": "T. Henderson",
+    "position": "RB",
+    "team": "NE",
+    "xrank": 65,
+    "adp": 70.8,
+    "projPts": 147.08,
+    "tier": 7
+  },
+  {
+    "name": "T. Kraft",
+    "position": "TE",
+    "team": "GB",
+    "xrank": 66,
+    "adp": 59.3,
+    "projPts": 124.57,
+    "tier": 7
+  },
+  {
+    "name": "J. Daniels",
+    "position": "QB",
+    "team": "Was",
+    "xrank": 67,
+    "adp": 60.1,
+    "projPts": 302.91,
+    "tier": 7
+  },
+  {
+    "name": "M. Harrison Jr.",
+    "position": "WR",
+    "team": "Ari",
+    "xrank": 68,
+    "adp": 77,
+    "projPts": 116.04,
+    "tier": 7
+  },
+  {
+    "name": "J. Warren",
+    "position": "RB",
+    "team": "Pit",
+    "xrank": 69,
+    "adp": 72.8,
+    "projPts": 157,
+    "tier": 7
+  },
+  {
+    "name": "S. LaPorta",
+    "position": "TE",
+    "team": "Det",
+    "xrank": 70,
+    "adp": 64.2,
+    "projPts": 107.18,
+    "tier": 7
+  },
+  {
+    "name": "M. Lloyd",
+    "position": "RB",
+    "team": "GB",
+    "xrank": 71,
+    "adp": 84.9,
+    "projPts": 162.64,
+    "tier": 7
+  },
+  {
+    "name": "C. Williams",
+    "position": "QB",
+    "team": "Chi",
+    "xrank": 72,
+    "adp": 67,
+    "projPts": 285.77,
+    "tier": 7
+  },
+  {
+    "name": "B. Thomas Jr.",
+    "position": "WR",
+    "team": "Jax",
+    "xrank": 73,
+    "adp": 83.1,
+    "projPts": 106.76,
+    "tier": 8
+  },
+  {
+    "name": "C. Tate",
+    "position": "WR",
+    "team": "Ten",
+    "xrank": 74,
+    "adp": 83.7,
+    "projPts": 107.45,
+    "tier": 8
+  },
+  {
+    "name": "J. Herbert",
+    "position": "QB",
+    "team": "LAC",
+    "xrank": 75,
+    "adp": 73,
+    "projPts": 272.38,
+    "tier": 8
+  },
+  {
+    "name": "D. Metcalf",
+    "position": "WR",
+    "team": "Pit",
+    "xrank": 76,
+    "adp": 84.9,
+    "projPts": 120.89,
+    "tier": 8
+  },
+  {
+    "name": "J. Brooks",
+    "position": "RB",
+    "team": "Car",
+    "xrank": 77,
+    "adp": 82.2,
+    "projPts": 138.46,
+    "tier": 8
+  },
+  {
+    "name": "H. Fannin Jr.",
+    "position": "TE",
+    "team": "Cle",
+    "xrank": 78,
+    "adp": 71.9,
+    "projPts": 105.7,
+    "tier": 8
+  },
+  {
+    "name": "K. Pitts Sr.",
+    "position": "TE",
+    "team": "Atl",
+    "xrank": 79,
+    "adp": 73,
+    "projPts": 104.28,
+    "tier": 8
+  },
+  {
+    "name": "T. Lawrence",
+    "position": "QB",
+    "team": "Jax",
+    "xrank": 80,
+    "adp": 82.4,
+    "projPts": 286.03,
+    "tier": 8
+  },
+  {
+    "name": "T. Pollard",
+    "position": "RB",
+    "team": "Ten",
+    "xrank": 81,
+    "adp": 85.3,
+    "projPts": 131.68,
+    "tier": 8
+  },
+  {
+    "name": "C. Godwin Jr.",
+    "position": "WR",
+    "team": "TB",
+    "xrank": 82,
+    "adp": 91,
+    "projPts": 101.21,
+    "tier": 8
+  },
+  {
+    "name": "D. Prescott",
+    "position": "QB",
+    "team": "Dal",
+    "xrank": 83,
+    "adp": 73.4,
+    "projPts": 293.32,
+    "tier": 8
+  },
+  {
+    "name": "C. Hubbard",
+    "position": "RB",
+    "team": "Car",
+    "xrank": 84,
+    "adp": 95.5,
+    "projPts": 125.86,
+    "tier": 8
+  },
+  {
+    "name": "J. Dobbins",
+    "position": "RB",
+    "team": "Den",
+    "xrank": 85,
+    "adp": 91.2,
+    "projPts": 121.43,
+    "tier": 8
+  },
+  {
+    "name": "R. Dowdle",
+    "position": "RB",
+    "team": "Pit",
+    "xrank": 86,
+    "adp": 84.3,
+    "projPts": 155,
+    "tier": 8
+  },
+  {
+    "name": "G. Kittle",
+    "position": "TE",
+    "team": "SF",
+    "xrank": 87,
+    "adp": 80.3,
+    "projPts": 99.88,
+    "tier": 8
+  },
+  {
+    "name": "J. Downs",
+    "position": "WR",
+    "team": "Ind",
+    "xrank": 88,
+    "adp": 101.1,
+    "projPts": 110.25,
+    "tier": 8
+  },
+  {
+    "name": "Q. Johnston",
+    "position": "WR",
+    "team": "LAC",
+    "xrank": 89,
+    "adp": 103.8,
+    "projPts": 106.97,
+    "tier": 8
+  },
+  {
+    "name": "M. Wilson",
+    "position": "WR",
+    "team": "Ari",
+    "xrank": 90,
+    "adp": 97.9,
+    "projPts": 103.64,
+    "tier": 8
+  },
+  {
+    "name": "J. Croskey-Merritt",
+    "position": "RB",
+    "team": "Was",
+    "xrank": 91,
+    "adp": 100.8,
+    "projPts": 127.32,
+    "tier": 8
+  },
+  {
+    "name": "B. Corum",
+    "position": "RB",
+    "team": "LAR",
+    "xrank": 92,
+    "adp": 98.1,
+    "projPts": 134.62,
+    "tier": 8
+  },
+  {
+    "name": "D. Stribling",
+    "position": "WR",
+    "team": "SF",
+    "xrank": 93,
+    "adp": 105,
+    "projPts": 70.58,
+    "tier": 8
+  },
+  {
+    "name": "J. Reed",
+    "position": "WR",
+    "team": "GB",
+    "xrank": 94,
+    "adp": 109.5,
+    "projPts": 119.83,
+    "tier": 8
+  },
+  {
+    "name": "J. Addison",
+    "position": "WR",
+    "team": "Min",
+    "xrank": 95,
+    "adp": 113.5,
+    "projPts": 105.85,
+    "tier": 9
+  },
+  {
+    "name": "A. Pierce",
+    "position": "WR",
+    "team": "Ind",
+    "xrank": 96,
+    "adp": 97.8,
+    "projPts": 135.26,
+    "tier": 9
+  },
+  {
+    "name": "S. Diggs",
+    "position": "WR",
+    "team": "Was",
+    "xrank": 97,
+    "adp": 106.7,
+    "projPts": 104.01,
+    "tier": 9
+  },
+  {
+    "name": "K. Concepcion",
+    "position": "WR",
+    "team": "Cle",
+    "xrank": 98,
+    "adp": 117.9,
+    "projPts": 92.07,
+    "tier": 9
+  },
+  {
+    "name": "M. Golden",
+    "position": "WR",
+    "team": "GB",
+    "xrank": 99,
+    "adp": 122.2,
+    "projPts": 102.55,
+    "tier": 9
+  },
+  {
+    "name": "C. Sutton",
+    "position": "WR",
+    "team": "Den",
+    "xrank": 100,
+    "adp": 110.2,
+    "projPts": 111.48,
+    "tier": 9
+  },
+  {
+    "name": "B. Purdy",
+    "position": "QB",
+    "team": "SF",
+    "xrank": 101,
+    "adp": 99,
+    "projPts": 270.13,
+    "tier": 9
+  },
+  {
+    "name": "M. Lemon",
+    "position": "WR",
+    "team": "Phi",
+    "xrank": 102,
+    "adp": 125.2,
+    "projPts": 84.65,
+    "tier": 9
+  },
+  {
+    "name": "J. Mason",
+    "position": "RB",
+    "team": "Min",
+    "xrank": 103,
+    "adp": 106.4,
+    "projPts": 133.37,
+    "tier": 9
+  },
+  {
+    "name": "M. Pittman Jr.",
+    "position": "WR",
+    "team": "Pit",
+    "xrank": 104,
+    "adp": 122,
+    "projPts": 105.63,
+    "tier": 9
+  },
+  {
+    "name": "B. Nix",
+    "position": "QB",
+    "team": "Den",
+    "xrank": 105,
+    "adp": 98.4,
+    "projPts": 282.69,
+    "tier": 9
+  },
+  {
+    "name": "D. Kincaid",
+    "position": "TE",
+    "team": "Buf",
+    "xrank": 106,
+    "adp": 97.4,
+    "projPts": 90.35,
+    "tier": 9
+  },
+  {
+    "name": "J. Dart",
+    "position": "QB",
+    "team": "NYG",
+    "xrank": 107,
+    "adp": 98.4,
+    "projPts": 282.84,
+    "tier": 9
+  },
+  {
+    "name": "R. Harvey",
+    "position": "RB",
+    "team": "Den",
+    "xrank": 108,
+    "adp": 116.3,
+    "projPts": 116.39,
+    "tier": 9
+  },
+  {
+    "name": "W. Robinson",
+    "position": "WR",
+    "team": "Ten",
+    "xrank": 109,
+    "adp": 131.9,
+    "projPts": 98.2,
+    "tier": 9
+  },
+  {
+    "name": "K. Monangai",
+    "position": "RB",
+    "team": "Chi",
+    "xrank": 110,
+    "adp": 119.7,
+    "projPts": 128.3,
+    "tier": 9
+  },
+  {
+    "name": "K. Gainwell",
+    "position": "RB",
+    "team": "TB",
+    "xrank": 111,
+    "adp": 123.3,
+    "projPts": 118,
+    "tier": 9
+  },
+  {
+    "name": "C. Rodriguez Jr.",
+    "position": "RB",
+    "team": "Jax",
+    "xrank": 112,
+    "adp": 129.3,
+    "projPts": 105.5,
+    "tier": 9
+  },
+  {
+    "name": "J. Coker",
+    "position": "WR",
+    "team": "Car",
+    "xrank": 113,
+    "adp": 135.1,
+    "projPts": 96.53,
+    "tier": 9
+  },
+  {
+    "name": "R. White",
+    "position": "RB",
+    "team": "Was",
+    "xrank": 114,
+    "adp": 131.4,
+    "projPts": 115.26,
+    "tier": 9
+  },
+  {
+    "name": "M. Stafford",
+    "position": "QB",
+    "team": "LAR",
+    "xrank": 115,
+    "adp": 102.4,
+    "projPts": 262.38,
+    "tier": 9
+  },
+  {
+    "name": "D. Goedert",
+    "position": "TE",
+    "team": "Phi",
+    "xrank": 116,
+    "adp": 103.7,
+    "projPts": 95.3,
+    "tier": 9
+  },
+  {
+    "name": "J. Goff",
+    "position": "QB",
+    "team": "Det",
+    "xrank": 117,
+    "adp": 114.4,
+    "projPts": 272.29,
+    "tier": 9
+  },
+  {
+    "name": "T. Kelce",
+    "position": "TE",
+    "team": "KC",
+    "xrank": 118,
+    "adp": 98.3,
+    "projPts": 98.88,
+    "tier": 9
+  },
+  {
+    "name": "K. Murray",
+    "position": "QB",
+    "team": "Min",
+    "xrank": 119,
+    "adp": 117.7,
+    "projPts": 271.62,
+    "tier": 9
+  },
+  {
+    "name": "I. Likely",
+    "position": "TE",
+    "team": "NYG",
+    "xrank": 120,
+    "adp": 109.3,
+    "projPts": 85.76,
+    "tier": 9
+  },
+  {
+    "name": "R. Doubs",
+    "position": "WR",
+    "team": "NE",
+    "xrank": 121,
+    "adp": 135,
+    "projPts": 101.65,
+    "tier": 9
+  },
+  {
+    "name": "P. Mahomes",
+    "position": "QB",
+    "team": "KC",
+    "xrank": 122,
+    "adp": 112.2,
+    "projPts": 260.43,
+    "tier": 9
+  },
+  {
+    "name": "A. Jones Sr.",
+    "position": "RB",
+    "team": "Min",
+    "xrank": 123,
+    "adp": 128.5,
+    "projPts": 121.02,
+    "tier": 9
+  },
+  {
+    "name": "K. Mitchell",
+    "position": "RB",
+    "team": "LAC",
+    "xrank": 124,
+    "adp": 132.8,
+    "projPts": 81.09,
+    "tier": 9
+  },
+  {
+    "name": "J. Love",
+    "position": "QB",
+    "team": "GB",
+    "xrank": 125,
+    "adp": 124.2,
+    "projPts": 274.26,
+    "tier": 9
+  },
+  {
+    "name": "J. Jacobs",
+    "position": "RB",
+    "team": "GB",
+    "xrank": 126,
+    "adp": 101.6,
+    "projPts": 50.58,
+    "tier": 9
+  },
+  {
+    "name": "J. Meyers",
+    "position": "WR",
+    "team": "Jax",
+    "xrank": 127,
+    "adp": 136.1,
+    "projPts": 101.24,
+    "tier": 9
+  },
+  {
+    "name": "M. Washington Jr.",
+    "position": "RB",
+    "team": "LV",
+    "xrank": 128,
+    "adp": 127.5,
+    "projPts": 68.03,
+    "tier": 10
+  },
+  {
+    "name": "J. Tyson",
+    "position": "WR",
+    "team": "NO",
+    "xrank": 129,
+    "adp": 132.3,
+    "projPts": 69.3,
+    "tier": 10
+  },
+  {
+    "name": "W. Marks",
+    "position": "RB",
+    "team": "Hou",
+    "xrank": 130,
+    "adp": 133.3,
+    "projPts": 106.98,
+    "tier": 10
+  },
+  {
+    "name": "X. Worthy",
+    "position": "WR",
+    "team": "KC",
+    "xrank": 131,
+    "adp": 133.8,
+    "projPts": 97.97,
+    "tier": 10
+  },
+  {
+    "name": "R. Shaheed",
+    "position": "WR",
+    "team": "Sea",
+    "xrank": 132,
+    "adp": 133.8,
+    "projPts": 90.22,
+    "tier": 10
+  },
+  {
+    "name": "M. Willis",
+    "position": "QB",
+    "team": "Mia",
+    "xrank": 133,
+    "adp": 130.5,
+    "projPts": 266.68,
+    "tier": 10
+  },
+  {
+    "name": "J. Johnson",
+    "position": "TE",
+    "team": "NO",
+    "xrank": 134,
+    "adp": 123.1,
+    "projPts": 81.82,
+    "tier": 10
+  },
+  {
+    "name": "M. Andrews",
+    "position": "TE",
+    "team": "Bal",
+    "xrank": 135,
+    "adp": 115.1,
+    "projPts": 100.68,
+    "tier": 10
+  },
+  {
+    "name": "T. Allgeier",
+    "position": "RB",
+    "team": "Ari",
+    "xrank": 136,
+    "adp": 131.3,
+    "projPts": 87.5,
+    "tier": 10
+  },
+  {
+    "name": "B. Mayfield",
+    "position": "QB",
+    "team": "TB",
+    "xrank": 137,
+    "adp": 130.6,
+    "projPts": 257.21,
+    "tier": 10
+  },
+  {
+    "name": "T. Bigsby",
+    "position": "RB",
+    "team": "Phi",
+    "xrank": 138,
+    "adp": 132.8,
+    "projPts": 69.83,
+    "tier": 10
+  },
+  {
+    "name": "K. Shakir",
+    "position": "WR",
+    "team": "Buf",
+    "xrank": 139,
+    "adp": 134,
+    "projPts": 93.45,
+    "tier": 10
+  },
+  {
+    "name": "T. Spears",
+    "position": "RB",
+    "team": "Ten",
+    "xrank": 140,
+    "adp": 134.6,
+    "projPts": 98.83,
+    "tier": 10
+  },
+  {
+    "name": "J. Coleman",
+    "position": "RB",
+    "team": "Den",
+    "xrank": 141,
+    "adp": 131.5,
+    "projPts": 72.09,
+    "tier": 10
+  },
+  {
+    "name": "T. Tucker",
+    "position": "WR",
+    "team": "LV",
+    "xrank": 142,
+    "adp": 136.5,
+    "projPts": 77.35,
+    "tier": 10
+  },
+  {
+    "name": "T. Shough",
+    "position": "QB",
+    "team": "NO",
+    "xrank": 143,
+    "adp": 132.9,
+    "projPts": 267.94,
+    "tier": 10
+  },
+  {
+    "name": "D. Boston",
+    "position": "WR",
+    "team": "Cle",
+    "xrank": 144,
+    "adp": 136.7,
+    "projPts": 78.1,
+    "tier": 10
+  },
+  {
+    "name": "A. Mitchell",
+    "position": "WR",
+    "team": "NYJ",
+    "xrank": 145,
+    "adp": null,
+    "projPts": 65.02,
+    "tier": 10
+  },
+  {
+    "name": "J. Ferguson",
+    "position": "TE",
+    "team": "Dal",
+    "xrank": 146,
+    "adp": 123.1,
+    "projPts": 87.96,
+    "tier": 10
+  },
+  {
+    "name": "K. Allen",
+    "position": "WR",
+    "team": "Ind",
+    "xrank": 147,
+    "adp": 135.2,
+    "projPts": 70.22,
+    "tier": 10
+  },
+  {
+    "name": "Z. Charbonnet",
+    "position": "RB",
+    "team": "Sea",
+    "xrank": 148,
+    "adp": 135.4,
+    "projPts": 90.49,
+    "tier": 10
+  },
+  {
+    "name": "D. Schultz",
+    "position": "TE",
+    "team": "Hou",
+    "xrank": 149,
+    "adp": 129.4,
+    "projPts": 83.12,
+    "tier": 10
+  },
+  {
+    "name": "Texans",
+    "position": "DEF",
+    "team": "Hou",
+    "xrank": 150,
+    "adp": 99.3,
+    "projPts": 123.77,
+    "tier": 10
+  },
+  {
+    "name": "T. Ferguson",
+    "position": "TE",
+    "team": "LAR",
+    "xrank": 151,
+    "adp": 131.3,
+    "projPts": 63.25,
+    "tier": 10
+  },
+  {
+    "name": "D. Wicks",
+    "position": "WR",
+    "team": "Phi",
+    "xrank": 152,
+    "adp": 132.5,
+    "projPts": 64.26,
+    "tier": 10
+  },
+  {
+    "name": "B. Aubrey",
+    "position": "K",
+    "team": "Dal",
+    "xrank": 153,
+    "adp": 94.5,
+    "projPts": 139.05,
+    "tier": 10
+  },
+  {
+    "name": "D. Samuel Sr.",
+    "position": "WR",
+    "team": "SF",
+    "xrank": 154,
+    "adp": 133.7,
+    "projPts": 77.83,
+    "tier": 10
+  },
+  {
+    "name": "Rams",
+    "position": "DEF",
+    "team": "LAR",
+    "xrank": 155,
+    "adp": 89.3,
+    "projPts": 127.97,
+    "tier": 10
+  },
+  {
+    "name": "S. Darnold",
+    "position": "QB",
+    "team": "Sea",
+    "xrank": 156,
+    "adp": 130.7,
+    "projPts": 253.88,
+    "tier": 10
+  },
+  {
+    "name": "E. Johnson",
+    "position": "RB",
+    "team": "KC",
+    "xrank": 157,
+    "adp": 134.2,
+    "projPts": 63.39,
+    "tier": 10
+  },
+  {
+    "name": "C. Okonkwo",
+    "position": "TE",
+    "team": "Was",
+    "xrank": 158,
+    "adp": 130.5,
+    "projPts": 71.08,
+    "tier": 10
+  },
+  {
+    "name": "R. Davis",
+    "position": "RB",
+    "team": "Buf",
+    "xrank": 159,
+    "adp": 131.7,
+    "projPts": 63.94,
+    "tier": 10
+  },
+  {
+    "name": "J. McMillan",
+    "position": "WR",
+    "team": "TB",
+    "xrank": 160,
+    "adp": null,
+    "projPts": 71.89,
+    "tier": 10
+  },
+  {
+    "name": "J. Lane",
+    "position": "WR",
+    "team": "Bal",
+    "xrank": 161,
+    "adp": 136.3,
+    "projPts": 54.4,
+    "tier": 10
+  },
+  {
+    "name": "B. Robinson",
+    "position": "RB",
+    "team": "Atl",
+    "xrank": 162,
+    "adp": 132.1,
+    "projPts": 81.1,
+    "tier": 10
+  },
+  {
+    "name": "Broncos",
+    "position": "DEF",
+    "team": "Den",
+    "xrank": 163,
+    "adp": 105.7,
+    "projPts": 125.08,
+    "tier": 10
+  },
+  {
+    "name": "B. Allen",
+    "position": "RB",
+    "team": "NYJ",
+    "xrank": 164,
+    "adp": 137.4,
+    "projPts": 66.59,
+    "tier": 10
+  },
+  {
+    "name": "Seahawks",
+    "position": "DEF",
+    "team": "Sea",
+    "xrank": 165,
+    "adp": 112.2,
+    "projPts": 123.6,
+    "tier": 10
+  },
+  {
+    "name": "H. Henry",
+    "position": "TE",
+    "team": "NE",
+    "xrank": 166,
+    "adp": 131.4,
+    "projPts": 95.2,
+    "tier": 10
+  },
+  {
+    "name": "D. Jones",
+    "position": "QB",
+    "team": "Ind",
+    "xrank": 167,
+    "adp": 133.9,
+    "projPts": 257.48,
+    "tier": 10
+  },
+  {
+    "name": "K. Fairbairn",
+    "position": "K",
+    "team": "Hou",
+    "xrank": 168,
+    "adp": 120.2,
+    "projPts": 135.48,
+    "tier": 10
+  },
+  {
+    "name": "K. Black",
+    "position": "RB",
+    "team": "SF",
+    "xrank": 169,
+    "adp": 134.6,
+    "projPts": 48.87,
+    "tier": 10
+  },
+  {
+    "name": "Eagles",
+    "position": "DEF",
+    "team": "Phi",
+    "xrank": 170,
+    "adp": 124.5,
+    "projPts": 115.22,
+    "tier": 10
+  },
+  {
+    "name": "P. Bryant",
+    "position": "WR",
+    "team": "Den",
+    "xrank": 171,
+    "adp": null,
+    "projPts": 60.41,
+    "tier": 10
+  },
+  {
+    "name": "R. Flournoy",
+    "position": "WR",
+    "team": "Dal",
+    "xrank": 172,
+    "adp": null,
+    "projPts": 70.66,
+    "tier": 10
+  },
+  {
+    "name": "D. Sampson",
+    "position": "RB",
+    "team": "Cle",
+    "xrank": 173,
+    "adp": null,
+    "projPts": 75.42,
+    "tier": 10
+  },
+  {
+    "name": "B. Strange",
+    "position": "TE",
+    "team": "Jax",
+    "xrank": 174,
+    "adp": 134.5,
+    "projPts": 82.43,
+    "tier": 10
+  },
+  {
+    "name": "C. Stroud",
+    "position": "QB",
+    "team": "Hou",
+    "xrank": 175,
+    "adp": 133.6,
+    "projPts": 268.08,
+    "tier": 10
+  },
+  {
+    "name": "M. Davis",
+    "position": "RB",
+    "team": "Dal",
+    "xrank": 176,
+    "adp": null,
+    "projPts": 56.28,
+    "tier": 10
+  },
+  {
+    "name": "K. Boutte",
+    "position": "WR",
+    "team": "Hou",
+    "xrank": 177,
+    "adp": 134.5,
+    "projPts": 87.43,
+    "tier": 10
+  },
+  {
+    "name": "C. Dicker",
+    "position": "K",
+    "team": "LAC",
+    "xrank": 178,
+    "adp": 127.1,
+    "projPts": 136.27,
+    "tier": 10
+  },
+  {
+    "name": "C. Douglas",
+    "position": "WR",
+    "team": "Mia",
+    "xrank": 179,
+    "adp": null,
+    "projPts": 68.08,
+    "tier": 10
+  },
+  {
+    "name": "C. Allen",
+    "position": "WR",
+    "team": "KC",
+    "xrank": 180,
+    "adp": null,
+    "projPts": 47.14,
+    "tier": 10
+  },
+  {
+    "name": "Ravens",
+    "position": "DEF",
+    "team": "Bal",
+    "xrank": 181,
+    "adp": 137.9,
+    "projPts": 109.98,
+    "tier": 10
+  },
+  {
+    "name": "B. Young",
+    "position": "QB",
+    "team": "Car",
+    "xrank": 182,
+    "adp": null,
+    "projPts": 235.79,
+    "tier": 10
+  },
+  {
+    "name": "A. Barner",
+    "position": "TE",
+    "team": "Sea",
+    "xrank": 183,
+    "adp": 131.9,
+    "projPts": 75.09,
+    "tier": 10
+  },
+  {
+    "name": "T. Harris",
+    "position": "WR",
+    "team": "LAC",
+    "xrank": 184,
+    "adp": null,
+    "projPts": 64.12,
+    "tier": 10
+  },
+  {
+    "name": "C. Ward",
+    "position": "QB",
+    "team": "Ten",
+    "xrank": 185,
+    "adp": null,
+    "projPts": 236.32,
+    "tier": 10
+  },
+  {
+    "name": "J. Nailor",
+    "position": "WR",
+    "team": "LV",
+    "xrank": 186,
+    "adp": null,
+    "projPts": 75.81,
+    "tier": 10
+  },
+  {
+    "name": "T. Hunter",
+    "position": "WR",
+    "team": "Jax",
+    "xrank": 187,
+    "adp": 136.3,
+    "projPts": 48.67,
+    "tier": 10
+  },
+  {
+    "name": "J. Myers",
+    "position": "K",
+    "team": "Sea",
+    "xrank": 188,
+    "adp": 123.4,
+    "projPts": 134.66,
+    "tier": 10
+  },
+  {
+    "name": "Vikings",
+    "position": "DEF",
+    "team": "Min",
+    "xrank": 189,
+    "adp": 133,
+    "projPts": 116.89,
+    "tier": 10
+  },
+  {
+    "name": "J. Noel",
+    "position": "WR",
+    "team": "Hou",
+    "xrank": 190,
+    "adp": null,
+    "projPts": 58.8,
+    "tier": 10
+  },
+  {
+    "name": "A. Kamara",
+    "position": "RB",
+    "team": "NO",
+    "xrank": 191,
+    "adp": 134.4,
+    "projPts": 63.06,
+    "tier": 10
+  },
+  {
+    "name": "O. Cooper Jr.",
+    "position": "WR",
+    "team": "NYJ",
+    "xrank": 192,
+    "adp": null,
+    "projPts": 51.25,
+    "tier": 10
+  },
+  {
+    "name": "G. Dulcich",
+    "position": "TE",
+    "team": "Mia",
+    "xrank": 193,
+    "adp": 136,
+    "projPts": 80.9,
+    "tier": 10
+  },
+  {
+    "name": "C. Little",
+    "position": "K",
+    "team": "Jax",
+    "xrank": 194,
+    "adp": 134.4,
+    "projPts": 132.97,
+    "tier": 10
+  },
+  {
+    "name": "K. Sadiq",
+    "position": "TE",
+    "team": "NYJ",
+    "xrank": 195,
+    "adp": 135.4,
+    "projPts": 61.01,
+    "tier": 10
+  },
+  {
+    "name": "J. Jeudy",
+    "position": "WR",
+    "team": "Cle",
+    "xrank": 196,
+    "adp": null,
+    "projPts": 67.11,
+    "tier": 10
+  },
+  {
+    "name": "I. Pacheco",
+    "position": "RB",
+    "team": "Det",
+    "xrank": 197,
+    "adp": 133.5,
+    "projPts": 39.95,
+    "tier": 10
+  },
+  {
+    "name": "Jaguars",
+    "position": "DEF",
+    "team": "Jax",
+    "xrank": 198,
+    "adp": 137.4,
+    "projPts": 109.57,
+    "tier": 10
+  },
+  {
+    "name": "Steelers",
+    "position": "DEF",
+    "team": "Pit",
+    "xrank": 199,
+    "adp": 138.5,
+    "projPts": 111.62,
+    "tier": 10
+  },
+  {
+    "name": "Patriots",
+    "position": "DEF",
+    "team": "NE",
+    "xrank": 200,
+    "adp": 133.4,
+    "projPts": 117.45,
+    "tier": 10
+  },
+  {
+    "name": "N. Harris",
+    "position": "RB",
+    "team": "NYG",
+    "xrank": 201,
+    "adp": 133,
+    "projPts": 61.26,
+    "tier": 10
+  },
+  {
+    "name": "T. Loop",
+    "position": "K",
+    "team": "Bal",
+    "xrank": 202,
+    "adp": 137.9,
+    "projPts": 131.78,
+    "tier": 10
+  },
+  {
+    "name": "D. Claiborne",
+    "position": "RB",
+    "team": "Min",
+    "xrank": 203,
+    "adp": null,
+    "projPts": 33.96,
+    "tier": 10
+  },
+  {
+    "name": "N. Singleton",
+    "position": "RB",
+    "team": "Ten",
+    "xrank": 204,
+    "adp": null,
+    "projPts": 41.38,
+    "tier": 10
+  },
+  {
+    "name": "D. Vele",
+    "position": "WR",
+    "team": "NO",
+    "xrank": 205,
+    "adp": null,
+    "projPts": 60.74,
+    "tier": 10
+  },
+  {
+    "name": "C. Bell",
+    "position": "WR",
+    "team": "Mia",
+    "xrank": 206,
+    "adp": null,
+    "projPts": 52.95,
+    "tier": 10
+  },
+  {
+    "name": "J. Jennings",
+    "position": "WR",
+    "team": "Min",
+    "xrank": 207,
+    "adp": null,
+    "projPts": 74.32,
+    "tier": 10
+  },
+  {
+    "name": "M. Washington",
+    "position": "WR",
+    "team": "Mia",
+    "xrank": 208,
+    "adp": null,
+    "projPts": 68.73,
+    "tier": 10
+  },
+  {
+    "name": "J. Brissett",
+    "position": "QB",
+    "team": "Ari",
+    "xrank": 209,
+    "adp": null,
+    "projPts": 203.58,
+    "tier": 10
+  },
+  {
+    "name": "K. Johnson",
+    "position": "RB",
+    "team": "GB",
+    "xrank": 210,
+    "adp": null,
+    "projPts": 53.99,
+    "tier": 10
+  },
+  {
+    "name": "W. Reichard",
+    "position": "K",
+    "team": "Min",
+    "xrank": 211,
+    "adp": 142.6,
+    "projPts": 130.74,
+    "tier": 10
+  },
+  {
+    "name": "Z. Branch",
+    "position": "WR",
+    "team": "Atl",
+    "xrank": 212,
+    "adp": null,
+    "projPts": 53.05,
+    "tier": 10
+  },
+  {
+    "name": "K. Vidal",
+    "position": "RB",
+    "team": "LAC",
+    "xrank": 213,
+    "adp": null,
+    "projPts": 41.51,
+    "tier": 10
+  },
+  {
+    "name": "F. Mendoza",
+    "position": "QB",
+    "team": "LV",
+    "xrank": 214,
+    "adp": 130.9,
+    "projPts": 180.91,
+    "tier": 10
+  },
+  {
+    "name": "T. Hockenson",
+    "position": "TE",
+    "team": "Min",
+    "xrank": 215,
+    "adp": 135.8,
+    "projPts": 70.7,
+    "tier": 10
+  },
+  {
+    "name": "P. Freiermuth",
+    "position": "TE",
+    "team": "Pit",
+    "xrank": 216,
+    "adp": 136.7,
+    "projPts": 71.4,
+    "tier": 10
+  },
+  {
+    "name": "O. Gadsden",
+    "position": "TE",
+    "team": "LAC",
+    "xrank": 217,
+    "adp": 134.6,
+    "projPts": 42.17,
+    "tier": 10
+  },
+  {
+    "name": "C. Santos",
+    "position": "K",
+    "team": "Chi",
+    "xrank": 218,
+    "adp": 144.7,
+    "projPts": 130.7,
+    "tier": 10
+  },
+  {
+    "name": "G. Holani",
+    "position": "RB",
+    "team": "Sea",
+    "xrank": 219,
+    "adp": null,
+    "projPts": 40.32,
+    "tier": 10
+  },
+  {
+    "name": "E. Pineiro",
+    "position": "K",
+    "team": "SF",
+    "xrank": 220,
+    "adp": 142.5,
+    "projPts": 132.69,
+    "tier": 10
+  },
+  {
+    "name": "E. McPherson",
+    "position": "K",
+    "team": "Cin",
+    "xrank": 221,
+    "adp": 142.6,
+    "projPts": 131.24,
+    "tier": 10
+  },
+  {
+    "name": "R. Bateman",
+    "position": "WR",
+    "team": "Bal",
+    "xrank": 222,
+    "adp": null,
+    "projPts": 63.79,
+    "tier": 10
+  },
+  {
+    "name": "C. Otton",
+    "position": "TE",
+    "team": "TB",
+    "xrank": 223,
+    "adp": null,
+    "projPts": 62.47,
+    "tier": 10
+  },
+  {
+    "name": "S. McGowan",
+    "position": "RB",
+    "team": "Ind",
+    "xrank": 224,
+    "adp": null,
+    "projPts": 31.44,
+    "tier": 10
+  },
+  {
+    "name": "M. Fields",
+    "position": "WR",
+    "team": "NYG",
+    "xrank": 225,
+    "adp": null,
+    "projPts": 56.56,
+    "tier": 10
+  },
+  {
+    "name": "Cowboys",
+    "position": "DEF",
+    "team": "Dal",
+    "xrank": 226,
+    "adp": 139.5,
+    "projPts": 97.33,
+    "tier": 10
+  },
+  {
+    "name": "K. Allen",
+    "position": "RB",
+    "team": "Was",
+    "xrank": 227,
+    "adp": null,
+    "projPts": 39.68,
+    "tier": 10
+  },
+  {
+    "name": "K. Miller",
+    "position": "RB",
+    "team": "NO",
+    "xrank": 228,
+    "adp": null,
+    "projPts": 26.22,
+    "tier": 10
+  },
+  {
+    "name": "W. Lutz",
+    "position": "K",
+    "team": "Den",
+    "xrank": 229,
+    "adp": 141.1,
+    "projPts": 128.98,
+    "tier": 10
+  },
+  {
+    "name": "S. Perine",
+    "position": "RB",
+    "team": "Cin",
+    "xrank": 230,
+    "adp": null,
+    "projPts": 68.48,
+    "tier": 10
+  },
+  {
+    "name": "T. Thornton",
+    "position": "WR",
+    "team": "KC",
+    "xrank": 231,
+    "adp": null,
+    "projPts": 53.67,
+    "tier": 10
+  },
+  {
+    "name": "T. Tracy Jr.",
+    "position": "RB",
+    "team": "NYG",
+    "xrank": 232,
+    "adp": null,
+    "projPts": 45.94,
+    "tier": 10
+  },
+  {
+    "name": "Chargers",
+    "position": "DEF",
+    "team": "LAC",
+    "xrank": 233,
+    "adp": 140.5,
+    "projPts": 110.92,
+    "tier": 10
+  },
+  {
+    "name": "J. Dotson",
+    "position": "WR",
+    "team": "Atl",
+    "xrank": 234,
+    "adp": null,
+    "projPts": 50.02,
+    "tier": 10
+  },
+  {
+    "name": "J. Bates",
+    "position": "K",
+    "team": "Det",
+    "xrank": 235,
+    "adp": 142.1,
+    "projPts": 135.71,
+    "tier": 10
+  },
+  {
+    "name": "J. Bech",
+    "position": "WR",
+    "team": "LV",
+    "xrank": 236,
+    "adp": null,
+    "projPts": 35.46,
+    "tier": 10
+  },
+  {
+    "name": "Lions",
+    "position": "DEF",
+    "team": "Det",
+    "xrank": 237,
+    "adp": 140.4,
+    "projPts": 115.01,
+    "tier": 10
+  },
+  {
+    "name": "A. Williams",
+    "position": "WR",
+    "team": "Was",
+    "xrank": 238,
+    "adp": null,
+    "projPts": 39.1,
+    "tier": 10
+  },
+  {
+    "name": "Chiefs",
+    "position": "DEF",
+    "team": "KC",
+    "xrank": 239,
+    "adp": 139.9,
+    "projPts": 107.15,
+    "tier": 10
+  },
+  {
+    "name": "Packers",
+    "position": "DEF",
+    "team": "GB",
+    "xrank": 240,
+    "adp": 139.4,
+    "projPts": 104.39,
+    "tier": 10
+  },
+  {
+    "name": "T. Hurst III",
+    "position": "WR",
+    "team": "TB",
+    "xrank": 241,
+    "adp": null,
+    "projPts": 39.23,
+    "tier": 10
+  },
+  {
+    "name": "J. James",
+    "position": "RB",
+    "team": "SF",
+    "xrank": 242,
+    "adp": null,
+    "projPts": 42.1,
+    "tier": 10
+  },
+  {
+    "name": "Bills",
+    "position": "DEF",
+    "team": "Buf",
+    "xrank": 243,
+    "adp": 135.2,
+    "projPts": 109.04,
+    "tier": 10
+  },
+  {
+    "name": "C. Brooks",
+    "position": "RB",
+    "team": "GB",
+    "xrank": 244,
+    "adp": null,
+    "projPts": 47.36,
+    "tier": 10
+  },
+  {
+    "name": "G. Smith",
+    "position": "QB",
+    "team": "NYJ",
+    "xrank": 245,
+    "adp": null,
+    "projPts": 193.56,
+    "tier": 10
+  },
+  {
+    "name": "J. Hill",
+    "position": "RB",
+    "team": "Bal",
+    "xrank": 246,
+    "adp": null,
+    "projPts": 48.71,
+    "tier": 10
+  },
+  {
+    "name": "C. Parkinson",
+    "position": "TE",
+    "team": "LAR",
+    "xrank": 247,
+    "adp": null,
+    "projPts": 45.54,
+    "tier": 10
+  },
+  {
+    "name": "D. Waller",
+    "position": "TE",
+    "team": "Car",
+    "xrank": 248,
+    "adp": null,
+    "projPts": 65.16,
+    "tier": 10
+  },
+  {
+    "name": "A. Rodgers",
+    "position": "QB",
+    "team": "Pit",
+    "xrank": 249,
+    "adp": 130.4,
+    "projPts": 225.3,
+    "tier": 10
+  },
+  {
+    "name": "M. Penix Jr.",
+    "position": "QB",
+    "team": "Atl",
+    "xrank": 250,
+    "adp": null,
+    "projPts": 132.88,
+    "tier": 10
+  },
+  {
+    "name": "C. Ridley",
+    "position": "WR",
+    "team": "Ten",
+    "xrank": 251,
+    "adp": null,
+    "projPts": 64.34,
+    "tier": 10
+  },
+  {
+    "name": "H. Mevis",
+    "position": "K",
+    "team": "LAR",
+    "xrank": 252,
+    "adp": 134.6,
+    "projPts": 140.18,
+    "tier": 10
+  },
+  {
+    "name": "Bengals",
+    "position": "DEF",
+    "team": "Cin",
+    "xrank": 257,
+    "adp": 138.7,
+    "projPts": 101.37,
+    "tier": 10
+  },
+  {
+    "name": "49ers",
+    "position": "DEF",
+    "team": "SF",
+    "xrank": 260,
+    "adp": 134.6,
+    "projPts": 96.13,
+    "tier": 10
+  },
+  {
+    "name": "C. Kupp",
+    "position": "WR",
+    "team": "Sea",
+    "xrank": 263,
+    "adp": 132.9,
+    "projPts": 53.98,
+    "tier": 10
+  },
+  {
+    "name": "T. Smack",
+    "position": "K",
+    "team": "GB",
+    "xrank": 265,
+    "adp": 140,
+    "projPts": 130,
+    "tier": 10
+  },
+  {
+    "name": "Giants",
+    "position": "DEF",
+    "team": "NYG",
+    "xrank": 267,
+    "adp": 136.4,
+    "projPts": 97.01,
+    "tier": 10
+  },
+  {
+    "name": "C. McLaughlin",
+    "position": "K",
+    "team": "TB",
+    "xrank": 269,
+    "adp": 142.8,
+    "projPts": 129.15,
+    "tier": 10
+  },
+  {
+    "name": "C. Boswell",
+    "position": "K",
+    "team": "Pit",
+    "xrank": 270,
+    "adp": 139.2,
+    "projPts": 128.41,
+    "tier": 10
+  },
+  {
+    "name": "H. Butker",
+    "position": "K",
+    "team": "KC",
+    "xrank": 277,
+    "adp": 139.3,
+    "projPts": 131.26,
+    "tier": 10
+  },
+  {
+    "name": "A. Borregales",
+    "position": "K",
+    "team": "NE",
+    "xrank": 284,
+    "adp": 140.6,
+    "projPts": 127.49,
+    "tier": 10
+  },
+  {
+    "name": "Bears",
+    "position": "DEF",
+    "team": "Chi",
+    "xrank": 290,
+    "adp": 135.8,
+    "projPts": 101.4,
+    "tier": 10
+  },
+  {
+    "name": "D. Njoku",
+    "position": "TE",
+    "team": "LAC",
+    "xrank": 315,
+    "adp": 135.8,
+    "projPts": 43.64,
+    "tier": 10
+  },
+  {
+    "name": "J. Elliott",
+    "position": "K",
+    "team": "Phi",
+    "xrank": 347,
+    "adp": 139.7,
+    "projPts": 125.97,
+    "tier": 10
+  },
+  {
+    "name": "S. Shrader",
+    "position": "K",
+    "team": "Ind",
+    "xrank": 355,
+    "adp": 140.1,
+    "projPts": 138.02,
+    "tier": 10
+  },
+  {
+    "name": "N. Folk",
+    "position": "K",
+    "team": "Atl",
+    "xrank": 379,
+    "adp": 139,
+    "projPts": 124.1,
+    "tier": 10
+  },
+  {
+    "name": "T. Bass",
+    "position": "K",
+    "team": "Buf",
+    "xrank": 2529,
+    "adp": 140.1,
+    "projPts": 134.73,
+    "tier": 10
+  },
+  {
+    "name": "O. Beckham Jr.",
+    "position": "WR",
+    "team": "NYG",
+    "xrank": 2538,
+    "adp": 135.1,
+    "projPts": 6.23,
+    "tier": 10
+  },
+  {
+    "name": "E. Heidenreich",
+    "position": "RB",
+    "team": "Pit",
+    "xrank": 2565,
+    "adp": 103.5,
+    "projPts": 9.35,
+    "tier": 10
+  },
+  {
+    "name": "D. Laube",
+    "position": "RB",
+    "team": "LV",
+    "xrank": 2867,
+    "adp": 110.6,
+    "projPts": 7.37,
+    "tier": 10
+  }
+]
