@@ -10,7 +10,9 @@ Requires: pip install openpyxl
 """
 import json
 import re
+import statistics
 import sys
+from collections import defaultdict
 from pathlib import Path
 
 try:
@@ -24,12 +26,42 @@ DEST = ROOT / "src" / "data" / "draftkit-2026.json"
 
 TIER_RE = re.compile(r"^Tier\s+(\d+)$", re.IGNORECASE)
 
+# "Sleeper" = a skill-position player going late who projects well above the
+# points other players are getting around that same ADP neighborhood.
+SLEEPER_POSITIONS = {"QB", "RB", "WR", "TE"}
+SLEEPER_MIN_ADP = 90
+SLEEPER_NEIGHBOR_WINDOW = 6
+SLEEPER_POINTS_BOOST = 1.25
+
 
 def as_number(value):
     """Coerce a cell value to a number, or None for blanks/placeholders like '-'."""
     if isinstance(value, (int, float)):
         return value
     return None
+
+
+def tag_sleepers(players):
+    """Flag late-ADP skill players whose projection beats their ADP neighbors."""
+    by_position = defaultdict(list)
+    for p in players:
+        p["sleeper"] = False
+        if p["position"] in SLEEPER_POSITIONS and p["adp"] is not None:
+            by_position[p["position"]].append(p)
+
+    for group in by_position.values():
+        group.sort(key=lambda p: p["adp"])
+        n = len(group)
+        for i, p in enumerate(group):
+            if p["adp"] < SLEEPER_MIN_ADP:
+                continue
+            lo, hi = max(0, i - SLEEPER_NEIGHBOR_WINDOW), min(n, i + SLEEPER_NEIGHBOR_WINDOW + 1)
+            neighbors = [group[j]["projPts"] for j in range(lo, hi) if j != i]
+            if not neighbors:
+                continue
+            baseline = statistics.median(neighbors)
+            if baseline > 0 and p["projPts"] >= baseline * SLEEPER_POINTS_BOOST:
+                p["sleeper"] = True
 
 
 def main():
@@ -71,9 +103,11 @@ def main():
         )
         i += 4
 
+    tag_sleepers(players)
     players.sort(key=lambda p: p["xrank"] if p["xrank"] is not None else float("inf"))
     DEST.write_text(json.dumps(players, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    print(f"Wrote {len(players)} players to {DEST.relative_to(ROOT)}")
+    sleeper_count = sum(1 for p in players if p["sleeper"])
+    print(f"Wrote {len(players)} players ({sleeper_count} sleepers) to {DEST.relative_to(ROOT)}")
 
 
 if __name__ == "__main__":
