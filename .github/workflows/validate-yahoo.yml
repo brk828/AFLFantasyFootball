@@ -1,0 +1,43 @@
+name: Validate Yahoo credentials
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    env:
+      YAHOO_ACCESS_TOKEN: ${{ secrets.YAHOO_ACCESS_TOKEN }}
+      YAHOO_REFRESH_TOKEN: ${{ secrets.YAHOO_REFRESH_TOKEN }}
+      YAHOO_CLIENT_ID: ${{ secrets.YAHOO_CLIENT_ID }}
+      YAHOO_CLIENT_SECRET: ${{ secrets.YAHOO_CLIENT_SECRET }}
+      YAHOO_LEAGUE_KEY: ${{ secrets.YAHOO_LEAGUE_KEY }}
+    steps:
+      - name: Validate credentials and league access
+        run: |
+          node --input-type=module <<'NODE'
+          const required = ['YAHOO_ACCESS_TOKEN', 'YAHOO_REFRESH_TOKEN', 'YAHOO_CLIENT_ID', 'YAHOO_CLIENT_SECRET', 'YAHOO_LEAGUE_KEY'];
+          const missing = required.filter((name) => !process.env[name]);
+          if (missing.length) throw new Error(`Missing GitHub secrets: ${missing.join(', ')}`);
+
+          let accessToken = process.env.YAHOO_ACCESS_TOKEN;
+          const basic = Buffer.from(`${process.env.YAHOO_CLIENT_ID}:${process.env.YAHOO_CLIENT_SECRET}`).toString('base64');
+          const refresh = await fetch('https://api.login.yahoo.com/oauth2/get_token', {
+            method: 'POST',
+            headers: { Authorization: `Basic ${basic}`, 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: new URLSearchParams({ grant_type: 'refresh_token', refresh_token: process.env.YAHOO_REFRESH_TOKEN })
+          });
+          if (refresh.ok) accessToken = (await refresh.json()).access_token;
+          if (!accessToken) throw new Error(`Yahoo token validation failed with HTTP ${refresh.status}`);
+
+          const league = await fetch(`https://fantasysports.yahooapis.com/fantasy/v2/league/${process.env.YAHOO_LEAGUE_KEY}`, {
+            headers: { Authorization: `Bearer ${accessToken}`, Accept: 'application/xml' }
+          });
+          if (!league.ok) throw new Error(`Yahoo league validation failed with HTTP ${league.status}`);
+          const xml = await league.text();
+          const season = xml.match(/<season>(\d{4})<\/season>/)?.[1] ?? 'unknown season';
+          console.log(`Yahoo credentials valid; league metadata reachable for ${season}.`);
+          NODE
