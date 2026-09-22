@@ -22,12 +22,12 @@ After approval, use a `Confidential Client` and complete the OAuth 2.0 three-leg
 1. After Yahoo approves Fantasy Sports API access, create the baseline developer application with `Confidential Client` and an HTTPS redirect URI. GitHub Pages cannot receive OAuth callbacks, so use a separately deployed HTTPS helper or an HTTPS tunnel to a local callback service.
 2. Copy `.env.example` to `.env` and set `YAHOO_CLIENT_ID`, `YAHOO_CLIENT_SECRET`, and the exact HTTPS `YAHOO_REDIRECT_URI` registered in Yahoo.
 3. Start an HTTPS tunnel to port `8787`, then run `npm run yahoo:auth` and open the printed Yahoo authorization URL.
-4. The OAuth helper saves `YAHOO_ACCESS_TOKEN` and `YAHOO_REFRESH_TOKEN` to `.env`. Set `YAHOO_LEAGUE_KEY`, then run `npm run sync:weekly`.
+4. The OAuth helper saves `YAHOO_ACCESS_TOKEN` and `YAHOO_REFRESH_TOKEN` to `.env`. Set `YAHOO_LEAGUE_KEY`, then run `npm run sync:weekly`. The Yahoo sync refreshes an expired access token when the client and refresh credentials are available.
 5. Review the generated data, then run `npm run build` and publish `dist/`.
 
-Yahoo access tokens should never be committed or exposed to client-side Astro code. The initial Yahoo sync writes raw league standings to `src/data/yahoo.json`; awards such as Best QB, best pickup, and best trade can be derived from weekly roster/activity payloads as those data fields are confirmed for the league.
+Yahoo access tokens should never be committed or exposed to client-side Astro code. The Yahoo sync writes standings, weekly scores, player stats, roster moves, pickups, trades, and Best QB/Best pickup/Best trade awards to `src/data/yahoo.json` and the homepage snapshot. A trade award remains empty until the league has a completed trade.
 
-For GitHub Pages deployment, add `YAHOO_ACCESS_TOKEN` and `YAHOO_LEAGUE_KEY` under the repository's **Settings > Secrets and variables > Actions**. The deploy workflow syncs Yahoo when both secrets exist and otherwise uses the checked-in snapshot. The initial OAuth client ID and secret are only needed by the local or hosted OAuth helper.
+For GitHub Pages deployment, add `YAHOO_ACCESS_TOKEN`, `YAHOO_REFRESH_TOKEN`, `YAHOO_CLIENT_ID`, `YAHOO_CLIENT_SECRET`, and `YAHOO_LEAGUE_KEY` under the repository's **Settings > Secrets and variables > Actions**. The deploy workflow syncs Yahoo when the access token and league key exist and can refresh the access token when all credentials are present; otherwise it uses the checked-in snapshot.
 
 ## GitHub Pages
 

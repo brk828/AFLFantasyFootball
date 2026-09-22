@@ -30,6 +30,9 @@ jobs:
       - name: Sync Yahoo standings
         env:
           YAHOO_ACCESS_TOKEN: ${{ secrets.YAHOO_ACCESS_TOKEN }}
+          YAHOO_REFRESH_TOKEN: ${{ secrets.YAHOO_REFRESH_TOKEN }}
+          YAHOO_CLIENT_ID: ${{ secrets.YAHOO_CLIENT_ID }}
+          YAHOO_CLIENT_SECRET: ${{ secrets.YAHOO_CLIENT_SECRET }}
           YAHOO_LEAGUE_KEY: ${{ secrets.YAHOO_LEAGUE_KEY }}
         run: |
           if [[ -n "$YAHOO_ACCESS_TOKEN" && -n "$YAHOO_LEAGUE_KEY" ]]; then

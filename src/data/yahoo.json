@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-22T18:38:58.010Z",
+  "fetchedAt": "2026-09-22T20:32:34.275Z",
   "leagueKey": "470.l.803692",
   "teams": [
     {
@@ -72,5 +72,533 @@
       "losses": 2,
       "pointsFor": 144.4
     }
-  ]
+  ],
+  "weeklyScores": [
+    {
+      "week": 1,
+      "teamKey": "470.l.803692.t.1",
+      "team": "The Mighty C-Men",
+      "points": 125.66,
+      "projected": 101.64
+    },
+    {
+      "week": 1,
+      "teamKey": "470.l.803692.t.2",
+      "team": "A-a-ron",
+      "points": 133.82,
+      "projected": 103.52
+    },
+    {
+      "week": 1,
+      "teamKey": "470.l.803692.t.3",
+      "team": "Bradland Rotties",
+      "points": 93.74,
+      "projected": 92.88
+    },
+    {
+      "week": 1,
+      "teamKey": "470.l.803692.t.6",
+      "team": "Jerry's Kids",
+      "points": 122.92,
+      "projected": 100.72
+    },
+    {
+      "week": 1,
+      "teamKey": "470.l.803692.t.4",
+      "team": "Dolphindore's Army",
+      "points": 121.62,
+      "projected": 95.04
+    },
+    {
+      "week": 1,
+      "teamKey": "470.l.803692.t.5",
+      "team": "Greek Phreeks",
+      "points": 142.66,
+      "projected": 85.8
+    },
+    {
+      "week": 1,
+      "teamKey": "470.l.803692.t.7",
+      "team": "Lockerroom Loungers",
+      "points": 62.58,
+      "projected": 98.89
+    },
+    {
+      "week": 1,
+      "teamKey": "470.l.803692.t.10",
+      "team": "The Foley Rollers",
+      "points": 126.56,
+      "projected": 95.97
+    },
+    {
+      "week": 1,
+      "teamKey": "470.l.803692.t.8",
+      "team": "Red Rockets",
+      "points": 103.26,
+      "projected": 97.72
+    },
+    {
+      "week": 1,
+      "teamKey": "470.l.803692.t.11",
+      "team": "The Replacements",
+      "points": 81.82,
+      "projected": 99.92
+    },
+    {
+      "week": 2,
+      "teamKey": "470.l.803692.t.1",
+      "team": "The Mighty C-Men",
+      "points": 116.88,
+      "projected": 107.02
+    },
+    {
+      "week": 2,
+      "teamKey": "470.l.803692.t.4",
+      "team": "Dolphindore's Army",
+      "points": 72.74,
+      "projected": 95.14
+    },
+    {
+      "week": 2,
+      "teamKey": "470.l.803692.t.2",
+      "team": "A-a-ron",
+      "points": 114.76,
+      "projected": 99.7
+    },
+    {
+      "week": 2,
+      "teamKey": "470.l.803692.t.11",
+      "team": "The Replacements",
+      "points": 145.06,
+      "projected": 97.72
+    },
+    {
+      "week": 2,
+      "teamKey": "470.l.803692.t.3",
+      "team": "Bradland Rotties",
+      "points": 115.1,
+      "projected": 99.17
+    },
+    {
+      "week": 2,
+      "teamKey": "470.l.803692.t.10",
+      "team": "The Foley Rollers",
+      "points": 89.18,
+      "projected": 99.56
+    },
+    {
+      "week": 2,
+      "teamKey": "470.l.803692.t.5",
+      "team": "Greek Phreeks",
+      "points": 90.08,
+      "projected": 75.91
+    },
+    {
+      "week": 2,
+      "teamKey": "470.l.803692.t.7",
+      "team": "Lockerroom Loungers",
+      "points": 81.82,
+      "projected": 90.44
+    },
+    {
+      "week": 2,
+      "teamKey": "470.l.803692.t.6",
+      "team": "Jerry's Kids",
+      "points": 122.78,
+      "projected": 107.04
+    },
+    {
+      "week": 2,
+      "teamKey": "470.l.803692.t.8",
+      "team": "Red Rockets",
+      "points": 75.7,
+      "projected": 98.36
+    }
+  ],
+  "transactions": [
+    {
+      "id": 13,
+      "type": "add/drop",
+      "status": "successful",
+      "timestamp": 1789933233,
+      "players": [
+        {
+          "key": "470.p.29325",
+          "name": "Jacoby Brissett",
+          "position": "QB",
+          "type": "add",
+          "sourceType": "freeagents",
+          "team": "Red Rockets",
+          "teamKey": "470.l.803692.t.8"
+        },
+        {
+          "key": "470.p.100014",
+          "name": "Rams",
+          "position": "DEF",
+          "type": "drop",
+          "sourceType": "team",
+          "team": "Red Rockets",
+          "teamKey": "470.l.803692.t.8"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "type": "add/drop",
+      "status": "successful",
+      "timestamp": 1789786139,
+      "players": [
+        {
+          "key": "470.p.28534",
+          "name": "Stefon Diggs",
+          "position": "WR",
+          "type": "add",
+          "sourceType": "freeagents",
+          "team": "Jerry's Kids",
+          "teamKey": "470.l.803692.t.6"
+        },
+        {
+          "key": "470.p.34085",
+          "name": "Jake Ferguson",
+          "position": "TE",
+          "type": "drop",
+          "sourceType": "team",
+          "team": "Jerry's Kids",
+          "teamKey": "470.l.803692.t.6"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "type": "add/drop",
+      "status": "successful",
+      "timestamp": 1789433688,
+      "players": [
+        {
+          "key": "470.p.42712",
+          "name": "Kaelon Black",
+          "position": "RB",
+          "type": "add",
+          "sourceType": "freeagents",
+          "team": "A-a-ron",
+          "teamKey": "470.l.803692.t.2"
+        },
+        {
+          "key": "470.p.40231",
+          "name": "Chris Rodriguez Jr.",
+          "position": "RB",
+          "type": "drop",
+          "sourceType": "team",
+          "team": "A-a-ron",
+          "teamKey": "470.l.803692.t.2"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "type": "add/drop",
+      "status": "successful",
+      "timestamp": 1788804840,
+      "players": [
+        {
+          "key": "470.p.30295",
+          "name": "Aaron Jones Sr.",
+          "position": "RB",
+          "type": "add",
+          "sourceType": "freeagents",
+          "team": "Bradland Rotties",
+          "teamKey": "470.l.803692.t.3"
+        },
+        {
+          "key": "470.p.31856",
+          "name": "Josh Jacobs",
+          "position": "RB",
+          "type": "drop",
+          "sourceType": "team",
+          "team": "Bradland Rotties",
+          "teamKey": "470.l.803692.t.3"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "type": "commish",
+      "status": "successful",
+      "timestamp": 1788392035,
+      "players": []
+    },
+    {
+      "id": 8,
+      "type": "commish",
+      "status": "successful",
+      "timestamp": 1788391462,
+      "players": []
+    },
+    {
+      "id": 7,
+      "type": "commish",
+      "status": "successful",
+      "timestamp": 1788391462,
+      "players": []
+    },
+    {
+      "id": 6,
+      "type": "commish",
+      "status": "successful",
+      "timestamp": 1787002492,
+      "players": []
+    },
+    {
+      "id": 3,
+      "type": "commish",
+      "status": "successful",
+      "timestamp": 1786990212,
+      "players": []
+    },
+    {
+      "id": 2,
+      "type": "commish",
+      "status": "successful",
+      "timestamp": 1786990212,
+      "players": []
+    },
+    {
+      "id": 1,
+      "type": "commish",
+      "status": "successful",
+      "timestamp": 1786654100,
+      "players": []
+    }
+  ],
+  "pickups": [
+    {
+      "key": "470.p.30295",
+      "name": "Aaron Jones Sr.",
+      "position": "RB",
+      "type": "add",
+      "sourceType": "freeagents",
+      "team": "Bradland Rotties",
+      "teamKey": "470.l.803692.t.3",
+      "transactionId": 10,
+      "timestamp": 1788804840,
+      "points": 20.5,
+      "startWeek": 1
+    },
+    {
+      "key": "470.p.28534",
+      "name": "Stefon Diggs",
+      "position": "WR",
+      "type": "add",
+      "sourceType": "freeagents",
+      "team": "Jerry's Kids",
+      "teamKey": "470.l.803692.t.6",
+      "transactionId": 12,
+      "timestamp": 1789786139,
+      "points": 16.7,
+      "startWeek": 2
+    },
+    {
+      "key": "470.p.42712",
+      "name": "Kaelon Black",
+      "position": "RB",
+      "type": "add",
+      "sourceType": "freeagents",
+      "team": "A-a-ron",
+      "teamKey": "470.l.803692.t.2",
+      "transactionId": 11,
+      "timestamp": 1789433688,
+      "points": 9.5,
+      "startWeek": 1
+    },
+    {
+      "key": "470.p.29325",
+      "name": "Jacoby Brissett",
+      "position": "QB",
+      "type": "add",
+      "sourceType": "freeagents",
+      "team": "Red Rockets",
+      "teamKey": "470.l.803692.t.8",
+      "transactionId": 13,
+      "timestamp": 1789933233,
+      "points": 7.500000000000001,
+      "startWeek": 2
+    }
+  ],
+  "trades": [],
+  "playerStats": [
+    {
+      "playerKey": "470.p.29325",
+      "week": 2,
+      "points": 7.500000000000001
+    },
+    {
+      "playerKey": "470.p.28534",
+      "week": 2,
+      "points": 16.7
+    },
+    {
+      "playerKey": "470.p.42712",
+      "week": 1,
+      "points": 7
+    },
+    {
+      "playerKey": "470.p.42712",
+      "week": 2,
+      "points": 2.5
+    },
+    {
+      "playerKey": "470.p.30295",
+      "week": 1,
+      "points": 10
+    },
+    {
+      "playerKey": "470.p.30295",
+      "week": 2,
+      "points": 10.5
+    },
+    {
+      "playerKey": "470.p.30977",
+      "week": 2,
+      "points": 40.82
+    },
+    {
+      "playerKey": "470.p.29369",
+      "week": 2,
+      "points": 29.76
+    },
+    {
+      "playerKey": "470.p.41825",
+      "week": 2,
+      "points": 22.38
+    },
+    {
+      "playerKey": "470.p.32723",
+      "week": 2,
+      "points": 18.160000000000004
+    },
+    {
+      "playerKey": "470.p.41810",
+      "week": 2,
+      "points": 0.8
+    },
+    {
+      "playerKey": "470.p.9265",
+      "week": 2,
+      "points": 27.979999999999997
+    },
+    {
+      "playerKey": "470.p.40875",
+      "week": 2,
+      "points": 15.12
+    },
+    {
+      "playerKey": "470.p.31002",
+      "week": 2,
+      "points": 15.8
+    },
+    {
+      "playerKey": "470.p.40896",
+      "week": 2,
+      "points": 14.74
+    },
+    {
+      "playerKey": "470.p.30971",
+      "week": 2,
+      "points": 13.180000000000001
+    },
+    {
+      "playerKey": "470.p.30123",
+      "week": 2,
+      "points": 28.98
+    },
+    {
+      "playerKey": "470.p.32676",
+      "week": 2,
+      "points": 9.879999999999999
+    },
+    {
+      "playerKey": "470.p.29235",
+      "week": 2,
+      "points": 29.779999999999998
+    },
+    {
+      "playerKey": "470.p.32696",
+      "week": 2,
+      "points": 13.8
+    },
+    {
+      "playerKey": "470.p.30973",
+      "week": 2,
+      "points": 0
+    },
+    {
+      "playerKey": "470.p.40881",
+      "week": 2,
+      "points": 9.02
+    },
+    {
+      "playerKey": "470.p.31838",
+      "week": 2,
+      "points": 12.4
+    },
+    {
+      "playerKey": "470.p.32671",
+      "week": 2,
+      "points": 16.18
+    },
+    {
+      "playerKey": "470.p.40900",
+      "week": 2,
+      "points": 8.72
+    },
+    {
+      "playerKey": "470.p.34042",
+      "week": 2,
+      "points": 12.479999999999999
+    },
+    {
+      "playerKey": "470.p.33389",
+      "week": 2,
+      "points": 7.16
+    },
+    {
+      "playerKey": "470.p.40030",
+      "week": 2,
+      "points": 17.020000000000003
+    },
+    {
+      "playerKey": "470.p.40029",
+      "week": 2,
+      "points": 24.080000000000002
+    },
+    {
+      "playerKey": "470.p.34218",
+      "week": 2,
+      "points": 28.48
+    },
+    {
+      "playerKey": "470.p.31833",
+      "week": 2,
+      "points": 0
+    }
+  ],
+  "bestQB": {
+    "key": "470.p.30977",
+    "name": "Josh Allen",
+    "team": "The Mighty C-Men",
+    "points": 40.82
+  },
+  "bestPickup": {
+    "key": "470.p.30295",
+    "name": "Aaron Jones Sr.",
+    "position": "RB",
+    "type": "add",
+    "sourceType": "freeagents",
+    "team": "Bradland Rotties",
+    "teamKey": "470.l.803692.t.3",
+    "transactionId": 10,
+    "timestamp": 1788804840,
+    "points": 20.5,
+    "startWeek": 1
+  }
 }
