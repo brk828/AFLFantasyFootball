@@ -54,7 +54,6 @@ const baseUrl = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_UR
       </section>
 
       <aside class="sidebar">
-        <section class="panel pulse-panel"><p class="eyebrow">League pulse</p><h2>Last season,<br /><em>settled.</em></h2><div class="bar-chart" aria-label="Payout distribution"><i style="height: 100%"></i><i style="height: 29%"></i><i style="height: 16%"></i><i style="height: 16%"></i><i style="height: 8%"></i></div><div class="chart-labels"><span>1st</span><span>2nd</span><span>3rd</span><span>4th</span><span>5th+</span></div></section>
         <section class="panel awards-panel"><p class="eyebrow">League receipts</p><h2>Who made the move?</h2>{(league.yahooAwards ?? []).map((award) => <div class="award"><span>{award.label}</span><strong>{award.value}</strong><small>{award.detail}</small></div>)}</section>
       </aside>
     </div>
