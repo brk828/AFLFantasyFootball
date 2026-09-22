@@ -29,6 +29,17 @@ Run `npm run sync:sheet` for payout and standings data. Do not run the Yahoo syn
 
 Yahoo access tokens expire and may require refresh through the OAuth flow. For GitHub Actions, store `YAHOO_ACCESS_TOKEN` and `YAHOO_LEAGUE_KEY` as repository or environment secrets; the Pages workflow uses them when both are present and otherwise builds the checked-in snapshot. The client ID and client secret are needed by the initial OAuth helper, not by the current standings sync. Never commit `.env` or generated private API responses.
 
+### New Yahoo app confirmation pending
+
+A new Yahoo developer app was created for Fantasy Sports API access, but Yahoo requires a separate "Confirm Your Yahoo Fantasy Sports API Application" step (an email/dashboard confirmation) after app creation before `oauth2/request_auth` will work; requests made before confirmation fail immediately with a generic Yahoo error page. Remaining steps once that confirmation arrives:
+
+1. Start a fresh HTTPS tunnel (the previous quick Cloudflare tunnel URL is not durable and will have expired): `cloudflared tunnel --url http://localhost:8787`.
+2. Copy the new `https://<tunnel-host>/oauth/callback` URL and update the **Redirect URI** in the Yahoo app's settings to match exactly.
+3. Update `YAHOO_REDIRECT_URI` in `.env` to the same new URL.
+4. Run `npm run yahoo:auth` again to print a fresh authorization URL (it embeds the client ID, redirect URI, and a new state value, so a stale printed URL from an earlier run cannot be reused).
+5. Open the printed authorization URL, log in, and click Agree. Confirm the helper reports tokens saved to `.env`.
+6. Set `YAHOO_LEAGUE_KEY`, then run `npm run sync:yahoo`, `npm run sync:sheet`, and `npm run build`, reviewing generated data before publishing.
+
 ## Yahoo implementation plan
 
 1. Submit and obtain approval for Yahoo Fantasy Sports API access.

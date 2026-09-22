@@ -1,0 +1,76 @@
+{
+  "fetchedAt": "2026-09-22T18:38:58.010Z",
+  "leagueKey": "470.l.803692",
+  "teams": [
+    {
+      "name": "Jerry's Kids",
+      "rank": 1,
+      "wins": 2,
+      "losses": 0,
+      "pointsFor": 245.7
+    },
+    {
+      "name": "Greek Phreeks",
+      "rank": 2,
+      "wins": 2,
+      "losses": 0,
+      "pointsFor": 232.74
+    },
+    {
+      "name": "A-a-ron",
+      "rank": 3,
+      "wins": 1,
+      "losses": 1,
+      "pointsFor": 248.58
+    },
+    {
+      "name": "The Mighty C-Men",
+      "rank": 4,
+      "wins": 1,
+      "losses": 1,
+      "pointsFor": 242.54
+    },
+    {
+      "name": "The Replacements",
+      "rank": 5,
+      "wins": 1,
+      "losses": 1,
+      "pointsFor": 226.88
+    },
+    {
+      "name": "The Foley Rollers",
+      "rank": 6,
+      "wins": 1,
+      "losses": 1,
+      "pointsFor": 215.74
+    },
+    {
+      "name": "Bradland Rotties",
+      "rank": 7,
+      "wins": 1,
+      "losses": 1,
+      "pointsFor": 208.84
+    },
+    {
+      "name": "Red Rockets",
+      "rank": 8,
+      "wins": 1,
+      "losses": 1,
+      "pointsFor": 178.96
+    },
+    {
+      "name": "Dolphindore's Army",
+      "rank": 9,
+      "wins": 0,
+      "losses": 2,
+      "pointsFor": 194.36
+    },
+    {
+      "name": "Lockerroom Loungers",
+      "rank": 10,
+      "wins": 0,
+      "losses": 2,
+      "pointsFor": 144.4
+    }
+  ]
+}
