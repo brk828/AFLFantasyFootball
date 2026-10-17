@@ -117,6 +117,30 @@ for (const team of teamKeys) {
     quarterbacks.push({ key, name: unescapeXml(textValue(player, 'full')), team: team.name, points: await playerPoints(key, completedWeek) });
   }
 }
+const pickupKeys = new Set(adds.map((pickup) => `${pickup.teamKey}:${pickup.key}`));
+const weekPlayers = [];
+for (const team of teamKeys) {
+  const rosterXml = await responseXml(`team/${team.key}/roster;week=${completedWeek}`);
+  for (const player of blocks(rosterXml, 'player')) {
+    const key = textValue(player, 'player_key');
+    weekPlayers.push({
+      key,
+      name: unescapeXml(textValue(player, 'full')),
+      team: team.name,
+      position: textValue(player, 'display_position'),
+      started: !['', 'BN', 'IR'].includes(textValue(blocks(player, 'selected_position')[0] ?? '', 'position')),
+      pickup: pickupKeys.has(`${team.key}:${key}`),
+      points: await playerPoints(key, completedWeek)
+    });
+  }
+}
+const dumpsterCandidates = weekPlayers.filter((player) => player.started && player.pickup).map((player) => {
+  const peers = weekPlayers.filter((peer) => peer.position === player.position);
+  const rank = peers.filter((peer) => peer.points > player.points).length + 1;
+  return { ...player, rank, total: peers.length, percentile: rank / peers.length };
+});
+const dumpsterDiver = dumpsterCandidates.sort((a, b) => b.percentile - a.percentile || a.points - b.points)[0] ?? null;
+console.log(`Dumpster Diver: ${dumpsterCandidates.length} started pickups ranked by position.`);
 const bestPickup = pickups[0] ?? null;
 const bestQB = quarterbacks.sort((a, b) => b.points - a.points)[0] ?? null;
 
@@ -161,6 +185,7 @@ const formatPoints = (value) => Number(value.toFixed(1));
 league.yahooAwards = [
   ...(bestQB ? [{ label: 'Best QB', value: `${bestQB.name} · ${formatPoints(bestQB.points)} pts`, detail: `${bestQB.team} · through Week ${completedWeek}` }] : []),
   ...(bestPickup ? [{ label: 'Best pickup', value: `${bestPickup.name} · ${bestPickup.team}`, detail: `${formatPoints(bestPickup.points)} points since Week ${bestPickup.startWeek}` }] : []),
+  ...(dumpsterDiver ? [{ label: 'Dumpster Diver', value: `${dumpsterDiver.name} · ${formatPoints(dumpsterDiver.points)} pts`, detail: `${dumpsterDiver.team} · Week ${completedWeek} · ${dumpsterDiver.position} #${dumpsterDiver.rank} of ${dumpsterDiver.total} rostered` }] : []),
   ...(trades.length ? [{ label: 'Best trade', value: `Trade #${trades[0].id}`, detail: `${trades[0].players.map((player) => player.name).filter(Boolean).join(' for ')}` }] : [{ label: 'Best trade', value: 'No trades yet', detail: 'Trade activity will appear here when it happens.' }])
 ];
 league.activity = { weeklyScores, transactions, pickups, trades, playerStats };
